@@ -27,14 +27,20 @@ const Title = styled.p`
   letter-spacing: 12px;
   line-height: 2.4rem;
   text-align: right;
+  flex: 1;
 
   @media (min-width: ${size.medium}) {
-    margin: 0;
+    flex: initial;
+    margin-left: 0;
+    margin-right: 64px;
     text-align: left;
   }
 `
 
 const Menu = styled(MenuIcon)`
+  width: 32px;
+  height: 32px;
+
   @media (min-width: ${size.medium}) {
     display: none;
   }
@@ -45,7 +51,7 @@ const Nav = styled.nav<{ isVisible: boolean }>`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +59,7 @@ const Nav = styled.nav<{ isVisible: boolean }>`
   background: white;
   transform: translateX(-100%);
   transition: transform 200ms ease-out;
+  padding: 32px;
 
   ${(props) =>
     props.isVisible &&
@@ -64,6 +71,7 @@ const Nav = styled.nav<{ isVisible: boolean }>`
     position: initial;
     transform: translateX(0);
     transition: none;
+    padding: 0;
     flex: 1;
     display: flex;
     flex-direction:row;
@@ -74,8 +82,10 @@ const Nav = styled.nav<{ isVisible: boolean }>`
 
 const Exit = styled(ExitIcon)`
   position: absolute;
-  top: 35px;
+  top: 32px;
   left: 32px;
+  width: 32px;
+  height: 32px;
 
   @media (min-width: ${size.medium}) {
     display: none;
@@ -101,6 +111,7 @@ const NavItem = styled.a`
 
 const Divider = styled.div`
   width: 50%;
+  max-width: 250px;
   height: 2px;
   margin: 48px 0;
   background-color: ${colors.black};
