@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Hamburger Menu</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Main-(Mobile)" transform="translate(-31.000000, -35.000000)" fill="#000000">
-            <g id="Exit" transform="translate(24.000000, 28.000000)">
-                <polygon id="Cross" points="31.1958574 7.62563133 32.3743687 8.80414263 21.1789647 20.0006313 32.3743687 31.1958574 31.1958574 32.3743687 20.0006313 21.1789647 8.80414263 32.3743687 7.62563133 31.1958574 18.822298 20.0006313 7.62563133 8.80414263 8.80414263 7.62563133 20.0006313 18.822298"></polygon>
-            </g>
-        </g>
-    </g>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <polygon points="18.7175144 4.5753788 19.4246212 5.28248558 12.7073788 12.0003788 19.4246212 18.7175144 18.7175144 19.4246212 12.0003788 12.7073788 5.28248558 19.4246212 4.5753788 18.7175144 11.2933788 12.0003788 4.5753788 5.28248558 5.28248558 4.5753788 12.0003788 11.2933788" />
 </svg>

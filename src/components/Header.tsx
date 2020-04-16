@@ -40,6 +40,7 @@ const Title = styled.p`
 const Menu = styled(MenuIcon)`
   width: 32px;
   height: 32px;
+  fill: ${colors.black};
 
   @media (min-width: ${size.medium}) {
     display: none;
@@ -86,6 +87,7 @@ const Exit = styled(ExitIcon)`
   left: 32px;
   width: 32px;
   height: 32px;
+  fill: ${colors.black};
 
   @media (min-width: ${size.medium}) {
     display: none;
