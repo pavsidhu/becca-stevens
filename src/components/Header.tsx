@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import styled, { css } from "styled-components"
 
-import InstagramIcon from "../images/instagram.svg"
-import MenuIcon from "../images/menu.svg"
-import ExitIcon from "../images/exit.svg"
+import InstagramIcon from "../images/icons/instagram.svg"
+import MenuIcon from "../images/icons/menu.svg"
+import ExitIcon from "../images/icons/exit.svg"
 import { colors, size } from "../styles"
 
 const Container = styled.header`
