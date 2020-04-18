@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components"
 
 import Header from "./Header"
 import { colors } from "../styles"
+import Helmet from "react-helmet"
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -34,6 +35,12 @@ const GlobalStyle = createGlobalStyle`
 export default function Layout({ children }) {
   return (
     <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <GlobalStyle />
       <Header />
       <main>{children}</main>
