@@ -11,15 +11,8 @@ module.exports = {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
-          include: /images/,
+          include: /images\/icons/,
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`open sans \:300,400,600`],
-        display: "swap",
       },
     },
     `gatsby-plugin-react-helmet`,
