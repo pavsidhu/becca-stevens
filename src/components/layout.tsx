@@ -2,7 +2,7 @@ import React from "react"
 import { createGlobalStyle } from "styled-components"
 import Helmet from "react-helmet"
 
-import Header from "./Header"
+import { Footer, Header } from "."
 import { colors } from "../styles"
 
 const GlobalStyle = createGlobalStyle`
@@ -43,6 +43,7 @@ export default function Layout({ children }) {
 
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
