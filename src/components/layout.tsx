@@ -1,5 +1,5 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 import Header from "./Header"
 import { colors } from "../styles"
@@ -22,14 +22,23 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background: #efefef;
-    display: flex;
-    flex-direction: column;
   }
 
   a {
     text-decoration: none;
     color: inherit;
   }
+`
+
+const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+`
+
+const Main = styled.main`
+  display: flex;
 `
 
 export default function Layout({ children }) {
@@ -42,8 +51,11 @@ export default function Layout({ children }) {
         />
       </Helmet>
       <GlobalStyle />
-      <Header />
-      <main>{children}</main>
+
+      <Container>
+        <Header />
+        <Main>{children}</Main>
+      </Container>
     </>
   )
 }

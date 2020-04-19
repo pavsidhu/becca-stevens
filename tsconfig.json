@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
-    "typeRoots": ["src/custom.d.ts"]
+    "typeRoots": ["src/custom.d.ts"],
+    "esModuleInterop": true
   }
 }

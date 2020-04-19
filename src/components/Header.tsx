@@ -51,6 +51,7 @@ const Nav = styled.nav<{ isVisible: boolean }>`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
   min-height: 100%;
   display: flex;
