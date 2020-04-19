@@ -7,11 +7,17 @@ import ExitIcon from "../images/icons/exit.svg"
 import { colors, size } from "../styles"
 
 const Container = styled.header`
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  top: 0;
+  left: 0;
   flex: 1;
+  z-index: 1;
   display: flex;
   align-items: center;
   padding: 24px 32px;
-  background: white;
+  background: ${colors.white};
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
 
@@ -51,9 +57,8 @@ const Nav = styled.nav<{ isVisible: boolean }>`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +76,7 @@ const Nav = styled.nav<{ isVisible: boolean }>`
 
   @media (min-width: ${size.medium}) {
     position: initial;
+    height:initial;
     transform: translateX(0);
     transition: none;
     padding: 0;

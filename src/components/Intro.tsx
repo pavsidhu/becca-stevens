@@ -5,7 +5,8 @@ import becca from "../images/becca.jpg"
 import { colors, size } from "../styles"
 
 const Container = styled.article`
-  flex: 1;
+  margin-top: 96px;
+  height: calc(100vh - 96px);
   display: grid;
   grid-template-areas: "content";
   align-items: center;

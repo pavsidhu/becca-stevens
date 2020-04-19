@@ -1,9 +1,9 @@
 import React from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components"
+import Helmet from "react-helmet"
 
 import Header from "./Header"
 import { colors } from "../styles"
-import Helmet from "react-helmet"
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -30,17 +30,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Container = styled.div`
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr;
-`
-
-const Main = styled.main`
-  display: flex;
-`
-
 export default function Layout({ children }) {
   return (
     <>
@@ -52,10 +41,8 @@ export default function Layout({ children }) {
       </Helmet>
       <GlobalStyle />
 
-      <Container>
-        <Header />
-        <Main>{children}</Main>
-      </Container>
+      <Header />
+      <main>{children}</main>
     </>
   )
 }
