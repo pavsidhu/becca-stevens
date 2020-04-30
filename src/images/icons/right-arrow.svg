@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="67px" viewBox="0 0 34 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Right Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Main-(Desktop)" transform="translate(-1367.000000, -1593.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Blog" transform="translate(-1.000000, 1136.000000)">
+                <polyline id="Right-Arrow" transform="translate(1385.000000, 490.500000) rotate(-270.000000) translate(-1385.000000, -490.500000) " points="1353 506.5 1385 474.5 1417 506.5"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

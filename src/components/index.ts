@@ -1,5 +1,6 @@
 import About from "./About"
 import BlogPosts from "./BlogPosts"
+import BlogPostCard from "./BlogPostCard"
 import Footer from "./Footer"
 import Header from "./Header"
 import Instagram from "./Instagram"
@@ -11,6 +12,7 @@ import Title from "./Title"
 export {
   About,
   BlogPosts,
+  BlogPostCard,
   Footer,
   Header,
   Instagram,
