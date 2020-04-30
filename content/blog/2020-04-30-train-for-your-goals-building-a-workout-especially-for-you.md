@@ -1,8 +1,9 @@
 ---
 title: "Train for your goals: Building a workout especially for you"
 date: 2020-02-15T11:29:00.000Z
-cover_image: /images/0_d5wbaruakaistdwd.jpg
+coverImage: /images/0_d5wbaruakaistdwd.jpg
 ---
+
 Never sure how many repetitions to do? How long should you really be resting? What weights should you be using? How do I not get too big? If you’re asking these questions, this post is probably going to help you.
 
 ![Gym scene](https://miro.medium.com/max/1600/0*D5wBARuAkAISTdwd.jpg)
@@ -11,12 +12,12 @@ Take a look around Instagram and you can find thousands of posts on different ex
 
 **Some common goals in fitness:**
 
-* Toning Up
-* Muscular Endurance
-* Increasing General Fitness
-* Building Muscle
-* Gaining Weight
-* Increasing Power and Strength
+- Toning Up
+- Muscular Endurance
+- Increasing General Fitness
+- Building Muscle
+- Gaining Weight
+- Increasing Power and Strength
 
 Below, I have addressed these goals and, specifically, the number of repetitions, weights (relative to individual ability) and the rest time needed to achieve these goals. As with any targets, certain factors such as specific exercises, nutrition, workout time and effort level will all have an effect on the outcome of a programme. Also, it is important to bear in mind that, if you have more than one goal, combining these workout styles will also be beneficial.
 
@@ -62,8 +63,8 @@ If you have any questions about this, contact me at:
 
 References:
 
-De Salles, B.F., Simão, R., Miranda, F., Novaes, J. da S., Lemos, A. and Willardson, J.M. (2009). Rest interval between sets in strength training.*Sports medicine (Auckland, N.Z.)*, \[online] 39(9), pp.765–77. Available at:<https://www.ncbi.nlm.nih.gov/pubmed/19691365.>
+De Salles, B.F., Simão, R., Miranda, F., Novaes, J. da S., Lemos, A. and Willardson, J.M. (2009). Rest interval between sets in strength training._Sports medicine (Auckland, N.Z.)_, \[online] 39(9), pp.765–77. Available at:<https://www.ncbi.nlm.nih.gov/pubmed/19691365.>
 
-Mangine, G.T. et al (2015). The effect of training volume and intensity on improvements in muscular strength and size in resistance-trained men.*Physiological Reports*, \[online] 3(8), p.e12472. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4562558/pdf/phy20003-e12472.pdf.>
+Mangine, G.T. et al (2015). The effect of training volume and intensity on improvements in muscular strength and size in resistance-trained men._Physiological Reports_, \[online] 3(8), p.e12472. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4562558/pdf/phy20003-e12472.pdf.>
 
-McPherron, A.C., Guo, T., Bond, N.D. and Gavrilova, O. (2013). Increasing muscle mass to improve metabolism.*Adipocyte*, \[online] 2(2), pp.92–98. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3661116/>\[Accessed 29 Oct. 2019].
+McPherron, A.C., Guo, T., Bond, N.D. and Gavrilova, O. (2013). Increasing muscle mass to improve metabolism._Adipocyte_, \[online] 2(2), pp.92–98. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3661116/>\[Accessed 29 Oct. 2019].

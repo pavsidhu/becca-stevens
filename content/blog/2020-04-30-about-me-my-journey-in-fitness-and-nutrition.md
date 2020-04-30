@@ -1,8 +1,9 @@
 ---
 title: "About me: My journey in fitness and nutrition"
 date: 2020-02-12T13:21:00.000Z
-cover_image: /images/1_ebtgzjjff1olnds-l3idhw.jpeg
+coverImage: /images/1_ebtgzjjff1olnds-l3idhw.jpeg
 ---
+
 # **My Fitness Journey**
 
 Throughout most of secondary school, I was not sporty at all. Due to my lack of hand-eye coordination, I was the last to be picked for teams and I avoided PE however I could. In an effort to keep fit, I joined the gym in year 8. My main focus was cardio and I would spend over an hour simply running on the treadmill. This boosted my fitness hugely and, within the year, I had joined a long-distance running club. I ran at the club for 3 years and pushed myself to levels I had never dreamed of, succeeding competitively and also non-competitively in half-marathons. It showed me that the effort and consistency you put into something is reflected in your performance, a philosophy I still believe in today.

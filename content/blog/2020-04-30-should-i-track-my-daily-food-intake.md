@@ -1,8 +1,9 @@
 ---
 title: Should I track my daily food intake?
 date: 2020-03-22T14:33:21.932Z
-cover_image: /images/0_ftzmtrv393unaz_k.jpg
+coverImage: /images/0_ftzmtrv393unaz_k.jpg
 ---
+
 ![Fruit and vegetables on a slate surface](https://miro.medium.com/max/750/0*FTZMtrv393UNaZ_k.jpg)
 
 A healthy diet is just as important as exercise is in reaching your goals. Everyone will tell you this, but there is so much conflicting advice on how to structure your diet. I’m going to go through some common methods of tracking your food intake and break down some myths about nutrition.
@@ -39,17 +40,17 @@ It could also be beneficial to stick to low Glycaemic Index (GI) carbohydrates, 
 
 Fat is an important part of the diet and helps in many processes such as the absorption of fat-soluble vitamins or forming cell membranes. It is important to note to highlight that the consumption of fats will not make you ‘fat’. Fats are essential for everyone, however, the type of fat is extremely important. Saturated fats are the unhealthier fats, which can build up the cholesterol level in your blood. They are found in foods such as:
 
-* Butter
-* Dairy products
-* Deep-fried foods
-* Eggs
+- Butter
+- Dairy products
+- Deep-fried foods
+- Eggs
 
 Unsaturated fats are much healthier than these,and can lower the levels of cholesterol in your blood. These types of fats are found in
 
-* Seeds
-* Nuts
-* Oily Fish
-* Olive Oil
+- Seeds
+- Nuts
+- Oily Fish
+- Olive Oil
 
 You should eat approximately 20–25% of your daily calorie intake from fats.
 

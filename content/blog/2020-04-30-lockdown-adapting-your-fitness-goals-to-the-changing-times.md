@@ -1,8 +1,9 @@
 ---
 title: "Lockdown: Adapting your fitness goals to the changing times"
 date: 2020-04-07T09:36:00.000Z
-cover_image: /images/0_tbneh2mipf1_t9bh.jpg
+coverImage: /images/0_tbneh2mipf1_t9bh.jpg
 ---
+
 ![](https://miro.medium.com/max/620/0*TBnEH2mipf1_T9bh.jpg)
 
 So, it’s two weeks into lockdown and, I don’t know about you, but I’m starting to get bored. I finished my uni work, watched plenty of Netflix, looked for jobs, read some books and then reached a plateau. Without my daily trips to the gym or the pool, I found that I was lacking the motivation that I usually have for exercise. Although I have some home-workout equipment, without the squat racks, benches, a variety of weights of dumbbells and cardio machines, I can’t do the same level of workouts at home.
@@ -41,13 +42,13 @@ The exercise that I’ve most recently mastered is the pistol squat. There are l
 
 The list of exercises you could try to master is endless but here are some suggestions:
 
-* Pull-ups
-* Pistol Squats
-* Muscle-ups
-* Handstand
-* Handstand walks
-* Box Jumps
-* Push-ups
+- Pull-ups
+- Pistol Squats
+- Muscle-ups
+- Handstand
+- Handstand walks
+- Box Jumps
+- Push-ups
 
 # Focus on improving your flexibility
 
