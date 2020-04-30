@@ -2,7 +2,7 @@ import React, { forwardRef, useRef } from "react"
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
-import { colors } from "../styles"
+import { colors, size } from "../styles"
 
 const Container = styled(Link)`
   width: 100%;
@@ -20,17 +20,19 @@ const Container = styled(Link)`
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url("${props.background}");
   `}
 
-  /* Fix no right padding due to overflow of parent */
-  &:last-child {
-    position: relative;
+  @media (min-width: ${size.medium}) {
+    /* Fix no right padding due to overflow of parent */
+    &:last-child {
+      position: relative;
 
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: -16px;
-      width: 16px;
-      height: 1px;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -16px;
+        width: 16px;
+        height: 1px;
+      }
     }
   }
 `
