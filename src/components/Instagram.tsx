@@ -89,7 +89,7 @@ const PostImage = styled.img`
 export default function Instagram() {
   const getInstagramPosts = useStaticQuery(graphql`
     query GetInstagramPosts {
-      allInstaNode {
+      allInstaNode(limit: 6) {
         edges {
           node {
             id
