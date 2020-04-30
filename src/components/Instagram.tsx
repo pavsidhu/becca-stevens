@@ -8,20 +8,28 @@ import InstagramIcon from "../images/icons/instagram.svg"
 const Container = styled.article`
   display: grid;
   grid-template-areas:
-    "title"
-    "handle"
-    "content";
+    ". .       ."
+    ". title   ."
+    ". .       ."
+    ". handle  ."
+    ". .       ."
+    ". content ."
+    ". .       .";
   align-items: center;
   justify-items: center;
-  padding: 32px;
-  gap: 16px;
+  grid-template-rows: 24px auto 8px auto 24px auto 24px;
+  grid-template-columns: 24px 1fr 24px;
 
   @media (min-width: ${size.medium}) {
     justify-items: initial;
-    gap: 24px;
+    grid-template-rows: 64px auto 16px auto 24px;
+    grid-template-columns: 24px 1fr 1fr 24px;
     grid-template-areas:
-      "title handle"
-      "content content";
+      ". .       .       ."
+      ". title   handle  ."
+      ". .       .       ."
+      ". content content ."
+      ". .       .       .";
   }
 `
 
@@ -54,32 +62,22 @@ const Handle = styled.h4`
 `
 
 const Posts = styled.div`
-  --gap: 16px;
-  --posts-per-row: 2;
   grid-area: content;
   display: grid;
-  gap: var(--gap);
-
-  grid-template-columns: repeat(
-    var(--posts-per-row),
-    calc(
-      (100vw - 64px - (var(--gap) * (var(--posts-per-row) - 1))) /
-        var(--posts-per-row)
-    )
-  );
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 
   @media (min-width: 550px) {
-    --gap: 24px;
-    --posts-per-row: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 1000px) {
-    --gap: 32px;
-    --posts-per-row: 6;
+  @media (min-width: ${size.medium}) {
+    grid-template-columns: repeat(6, 1fr);
   }
 `
 
 const PostImage = styled.img`
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
