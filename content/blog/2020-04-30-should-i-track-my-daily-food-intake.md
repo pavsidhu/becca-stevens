@@ -1,6 +1,6 @@
 ---
 title: Should I track my daily food intake?
-date: 2020-04-30T13:33:21.932Z
+date: 2020-03-22T14:33:21.932Z
 cover_image: /images/0_ftzmtrv393unaz_k.jpg
 ---
 ![Fruit and vegetables on a slate surface](https://miro.medium.com/max/750/0*FTZMtrv393UNaZ_k.jpg)
