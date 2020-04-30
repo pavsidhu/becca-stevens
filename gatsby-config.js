@@ -27,6 +27,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `traintomaintain`,
+        access_token: process.env.GATSBY_API_URL,
+        instagram_id: "17841431366410261",
+        pagination: 6,
+        maxPosts: 6,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
