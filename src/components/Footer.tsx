@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 import InstagramIcon from "../images/icons/instagram.svg"
-import { colors, size } from "../styles"
+import { colors } from "../styles"
 
 const Container = styled.footer`
-  padding: 16px;
+  padding: 16px 16px 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;

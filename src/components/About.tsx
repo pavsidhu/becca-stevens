@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import DefaultTitle from "./Title"
 import { colors, size } from "../styles"
 import becca from "../images/about.jpg"
 
@@ -9,12 +8,11 @@ const Container = styled.article`
   display: grid;
   grid-template-areas:
     ". .        ."
-    ". title    ."
     ". photo    ."
     ". subtitle ."
     ". desc     ."
     ". .        .";
-  grid-template-rows: 64px auto auto auto auto 64px;
+  grid-template-rows: 64px auto auto auto 64px;
   grid-template-columns: 1fr minmax(auto, 70ch) 1fr;
   justify-items: center;
   align-items: center;
@@ -23,11 +21,10 @@ const Container = styled.article`
   @media (min-width: ${size.medium}) {
     grid-template-areas:
       ".     .     .     .        ."
-      "title title title title    title"
       ".     photo .     subtitle ."
       ".     photo .     desc     ."
       ".     .     .     .        .";
-    grid-template-rows: 0px 100px auto auto 180px;
+    grid-template-rows: 120px auto auto 172px;
     grid-template-columns:
       minmax(24px, 1fr)
       minmax(300px, 400px)
@@ -50,11 +47,6 @@ const Background = styled.div`
   @media (min-width: ${size.medium}) {
     clip-path: polygon(0 200px, 0 100%, 100% calc(100% - 200px), 100% 0);
   }
-`
-
-const Title = styled(DefaultTitle)`
-  grid-area: title;
-  align-self: start;
 `
 
 const Image = styled.img`
@@ -92,8 +84,6 @@ export default function About() {
   return (
     <Container>
       <Background />
-
-      <Title>A Bit About Me</Title>
 
       <Image src={becca} alt="Becca" />
 

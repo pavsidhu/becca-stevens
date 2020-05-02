@@ -14,6 +14,12 @@ const Container = styled(Link)`
   justify-content: flex-end;
   background-size: cover;
   background-position: 50%;
+  box-shadow:
+    0 0.3px 0.3px rgba(0, 0, 0, 0.031),
+    0 0.7px 0.9px rgba(0, 0, 0, 0.044),
+    0 1.6px 1.8px rgba(0, 0, 0, 0.056),
+    0 3.4px 3.7px rgba(0, 0, 0, 0.069),
+    0 10px 10px rgba(0, 0, 0, 0.1);
   scroll-snap-align: center;
 
   ${(props: { background: string }) => css`

@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-
-import { colors, size } from "../styles"
 import { graphql, useStaticQuery } from "gatsby"
+
+import DefaultTitle from "./DefaultTitle"
 import InstagramIcon from "../images/icons/instagram.svg"
+import { colors, size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -33,19 +34,14 @@ const Container = styled.article`
   }
 `
 
-const Title = styled.div`
+const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   grid-area: title;
 `
 
-const TitleText = styled.h3`
+const Title = styled(DefaultTitle)`
   margin-left: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  font-size: 2.8rem;
-  font-weight: 300;
-  color: ${colors.black};
 `
 
 const Handle = styled.h4`
@@ -102,10 +98,10 @@ export default function Instagram() {
 
   return (
     <Container>
-      <Title>
+      <TitleContainer>
         <InstagramIcon />
-        <TitleText>My Instagram</TitleText>
-      </Title>
+        <Title>My Instagram</Title>
+      </TitleContainer>
 
       <Handle>
         <a href="https://instagram.com/traintomaintain">@traintomaintain</a>
