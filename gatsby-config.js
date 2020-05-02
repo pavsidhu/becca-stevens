@@ -8,10 +8,22 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-smoothscroll`,
+    `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#CA8080`,
+        theme_color: `#CA8080`,
+        display: `minimal-ui`,
+      },
+    },
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
@@ -43,17 +55,6 @@ module.exports = {
         instagram_id: "17841431366410261",
         pagination: 6,
         maxPosts: 6,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#CA8080`,
-        theme_color: `#CA8080`,
-        display: `minimal-ui`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

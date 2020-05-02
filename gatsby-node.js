@@ -10,19 +10,3 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
-
-// Ignore seamless-scroll-polyfill library when building due to references to document
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /seamless-scroll-polyfill/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    })
-  }
-}
