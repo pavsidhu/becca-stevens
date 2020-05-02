@@ -109,7 +109,7 @@ export default function Instagram() {
       <Posts>
         {getInstagramPosts.allInstaNode.edges.map(({ node }) => (
           <a href={`https://instagram.com/p/${node.id}`} key={node.id}>
-            <PostImage src={node.preview} alt={node.caption} />
+            <PostImage src={node.preview} alt={node.caption} loading="lazy" />
           </a>
         ))}
       </Posts>

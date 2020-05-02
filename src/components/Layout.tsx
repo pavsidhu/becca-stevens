@@ -1,5 +1,6 @@
 import React from "react"
 import { createGlobalStyle } from "styled-components"
+import "loading-attribute-polyfill"
 
 import { Footer, Header } from "."
 import { colors } from "../styles"

@@ -125,7 +125,7 @@ export default function Intro() {
         <TriangleEnd />
       </Triangles>
 
-      <Photo src={becca} alt="Becca" />
+      <Photo src={becca} alt="Becca" loading="eager" />
 
       <Highlight />
 
