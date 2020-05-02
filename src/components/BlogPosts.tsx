@@ -1,14 +1,11 @@
 import React, { useRef } from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { seamless } from "seamless-scroll-polyfill"
 
 import LeftArrowIcon from "../images/icons/left-arrow.svg"
 import RightArrowIcon from "../images/icons/right-arrow.svg"
 import { BlogPostCard, Title } from "."
 import { size, colors } from "../styles"
-
-seamless({})
 
 const Container = styled.article`
   display: grid;
