@@ -5,6 +5,7 @@ import InstagramIcon from "../images/icons/instagram.svg"
 import MenuIcon from "../images/icons/menu.svg"
 import ExitIcon from "../images/icons/exit.svg"
 import { colors, size } from "../styles"
+import { Link } from "gatsby"
 
 const Container = styled.header`
   position: fixed;
@@ -101,7 +102,7 @@ const Exit = styled(ExitIcon)`
   }
 `
 
-const NavItem = styled.a`
+const NavItem = styled(Link)`
   color: ${colors.grey};
   font-size: 2.4rem;
   letter-spacing: 3px;
@@ -163,16 +164,18 @@ export default function Header() {
     <Container>
       <Menu onClick={() => setMenuVisible(true)} />
 
-      <Title>Maintain Fitness</Title>
+      <Title>
+        <Link to="">Maintain Fitness</Link>
+      </Title>
 
       <Nav isVisible={isMenuVisible}>
         <Exit onClick={() => setMenuVisible(false)} />
 
-        <NavItem href="">Blog</NavItem>
+        <NavItem to="/blog">Blog</NavItem>
         <Divider />
-        <NavItem href="">About</NavItem>
+        <NavItem to="">About</NavItem>
         <Divider />
-        <NavItem href="">Contact</NavItem>
+        <NavItem to="">Contact</NavItem>
 
         <SocialIcon href="https://instagram.com/traintomaintain">
           <Instagram />
