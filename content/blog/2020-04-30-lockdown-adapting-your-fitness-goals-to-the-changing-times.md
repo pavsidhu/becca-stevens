@@ -48,7 +48,7 @@ The list of exercises you could try to master is endless but here are some sugge
 - Box Jumps
 - Push-ups
 
-# Focus on improving your flexibility
+## Focus on improving your flexibility
 
 ![Woman doing a hamstring stretch](https://miro.medium.com/max/1600/0*ZpgUEWRXXPD1h3Lh.jpg)
 
@@ -56,7 +56,7 @@ I’ve recently downloaded the [downdog](https://www.downdogapp.com/) app and ha
 
 Another goal that I want to achieve is being able to do the splits. Anyone who knows me will know that my flexibility is awful (although improved recently). In the past, when I was a runner, I frequently got shin splints and other injuries due to tight calves and lack of stretching. Stretching is always important before and after a workout but, with the extra time on my hands, I’m enjoying having at least 10 minutes extra per day, dedicated to stretching and relaxation. If you’re unsure on how exactly to stretch, try a yoga app or youtube video to get a routine and see what works for you.
 
-# (Whilst we still can) Get outside the house
+## (Whilst we still can) Get outside the house
 
 ![Woman going for a run in a forest](https://miro.medium.com/max/1600/0*OXuQrwJb8cO_7Tee.jpg)
 
