@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -57,6 +56,12 @@ module.exports = {
         instagram_id: "17841431366410261",
         pagination: 6,
         maxPosts: 6,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: ["gatsby-remark-unwrap-images", "gatsby-remark-picture"],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
