@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Pav Sidhu <pav@pavsidhu.com>",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.20.12",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-netlify-cms": "^4.2.4",
