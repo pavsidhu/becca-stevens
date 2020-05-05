@@ -8,7 +8,7 @@ We’ve all got to a point in our fitness journeys where we have plateaued. The 
 
 ## 1. Make yourself a programme
 
-![Happy woman showing her muscles ](https://miro.medium.com/max/1024/0*jS9W1E1DwkoGXM9_.jpg)
+![Happy woman showing her muscles](https://miro.medium.com/max/1024/0*jS9W1E1DwkoGXM9_.jpg)
 
 One of the most important parts of staying motivated in the gym is having a programme. Ensuring that you know what you are going to be doing each day and sticking to it. I don’t mean that you need to plan every rep of every exercise but, it definitely helps to have a rough idea of what you want to be doing each session.
 
@@ -50,4 +50,4 @@ In the past, people have said to me ‘I’ve stopped going to the gym because I
 
 Allow yourself a break when you need it and don’t punish yourself for imperfections along the way.
 
-I hope that this article has been useful for you, if you have any questions, contact me at becca@traintomaintain.co.uk
+I hope that this article has been useful for you, if you have any questions, contact me at [becca@traintomaintain.co.uk](mailto:becca@traintomaintain.co.uk)

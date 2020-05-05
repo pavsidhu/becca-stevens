@@ -4,8 +4,6 @@ date: 2020-03-22T14:33:21.932Z
 coverImage: /images/0_ftzmtrv393unaz_k.jpg
 ---
 
-![Fruit and vegetables on a slate surface](https://miro.medium.com/max/750/0*FTZMtrv393UNaZ_k.jpg)
-
 A healthy diet is just as important as exercise is in reaching your goals. Everyone will tell you this, but there is so much conflicting advice on how to structure your diet. I’m going to go through some common methods of tracking your food intake and break down some myths about nutrition.
 
 The most important point that I want to push is that everyone is individual and a diet should reflect that. There is no ‘one size fits all’ for nutrition and it takes a bit of tweaking to get a diet that works for you. Here are some general nutrition tips that may help you along the way.
@@ -24,7 +22,7 @@ Within your daily calories, you should eat the right proportion of protein to fa
 
 ## Protein
 
-There’s so much hype about protein in the fitness industry, and rightly so. Protein is key in repairing and building muscle in your body. It is important to note that eating a diet high in protein will not make you muscular and ‘big’. For men, it helps to have plenty of protein, if your goal is muscle growth, however ,you will still need to work in the correct way to allow for muscle growth\[[see here]](https://medium.com/@beccastevens_84388/train-for-your-goals-building-a-workout-especially-for-you-f1bcdf3e02dc).
+There’s so much hype about protein in the fitness industry, and rightly so. Protein is key in repairing and building muscle in your body. It is important to note that eating a diet high in protein will not make you muscular and ‘big’. For men, it helps to have plenty of protein, if your goal is muscle growth, however, you will still need to work in the correct way to allow for muscle growth [see here](https://medium.com/@beccastevens_84388/train-for-your-goals-building-a-workout-especially-for-you-f1bcdf3e02dc).
 
 In women, without steroids or other mass building supplements, you won’t become ‘big’. You may tone up and have more definition, however, it is not in your genetics to grow muscle to the same extent as men. Protein is an important part of the diet and everyone needs it, regardless of their physique goals. There is no need to worry, as many women do (I used to) about protein or muscle gain radically changing your body shape.
 
@@ -60,8 +58,8 @@ The image below shows how you can calculate your macronutrient intake. I strongl
 
 As long as you’re tracking the majority of your foods, you don’t need to obsess over the minor intakes such as milk in your tea or a few crisps from your mates’ bag. It’s important to have a good perspective, understand your general daily needs and work roughly from there. I would recommend tracking for a week or so, to understand portion sizes more clearly and have greater nutritional knowledge about the foods you are eating. However, after understanding this, you will have a better general idea about what to eat and whether or not tracking long term works for you.
 
-![How to calculate your macronutrient intake.](https://miro.medium.com/max/1476/1*3n5ftBy7evw9ndFNMIx6XQ.png "How to calculate your macronutrient intake.")
+![How to calculate your macronutrient intake](https://miro.medium.com/max/1476/1*3n5ftBy7evw9ndFNMIx6XQ.png)
 
 Thanks for reading! I hope it helped some of you!
 
-Check out my Instagram[@traintomaintain](https://www.instagram.com/traintomaintain/?hl=en)for more fitness-based information!
+Check out my Instagram [@traintomaintain](https://www.instagram.com/traintomaintain/?hl=en) for more fitness-based information!

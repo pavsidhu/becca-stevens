@@ -6,8 +6,6 @@ coverImage: /images/0_d5wbaruakaistdwd.jpg
 
 Never sure how many repetitions to do? How long should you really be resting? What weights should you be using? How do I not get too big? If you’re asking these questions, this post is probably going to help you.
 
-![Gym scene](https://miro.medium.com/max/1600/0*D5wBARuAkAISTdwd.jpg)
-
 Take a look around Instagram and you can find thousands of posts on different exercises to work all types of muscles, from something like your hamstrings all the way to the individual muscles in your hands. However, rarely have I seen posts on how to combine these into a workout to fit your goals. Whilst there is no general formula that can work for everyone, I’ve learned a few simple tips that should help you get the right workout for you.
 
 **Some common goals in fitness:**
@@ -33,21 +31,17 @@ However, as a general toning and improving muscular endurance goal, you would wa
 
 On the subject of rest, a short rest is most effective for this workout style. You want to ensure that your heart rate stays relatively high and your muscles don't completely recover. This is because you are training your muscles to be able to last a long time throughout your workouts. Therefore, resting between 15–30 seconds would be perfect, allowing for a brief recovery.
 
-**Goal 2: Building Muscle / Weight Gain**
+## Goal 2: Building Muscle / Weight Gain
 
 ![Fitness couple](https://miro.medium.com/max/848/0*7sW8xYdZcRR6rd42.jpg)
-
-[Source](http://:%20https//fashion-history.lovetoknow.com/image/196502~Fitness-Couple.jpg)
 
 If you want to get bigger; build those leg muscles, get that booty bigger or increase your arm and shoulder size, then building muscle is the way to get there.
 
 With each exercise you do, the number of repetitions, weight and rest-time is important. Try to aim for between 6–12 repetitions. At the end of each set, your muscles should feel tired and almost as if it would be a struggle to complete any more. To achieve this, the weight should be medium-heavy, with the last 2–3 repetitions feeling like a challenge. The rest time should ideally be between 30–60 seconds due to the levels of growth hormones in the body.
 
-**Goal 3: Power and Strength**
+## Goal 3: Power and Strength
 
 ![Eddie Hall in a swimming pool](https://miro.medium.com/max/500/0*_WkUIV_djHe1f9VH.jpg)
-
-Eddie Hall: World’s Strongest Man
 
 So you don’t necessarily care about having bigger muscles, you simply want to become strong. That's where this style of workout will come in.
 
@@ -57,14 +51,12 @@ It is recommended that, in training, you complete 3–5 reps in each set, again 
 
 If you have a combined goal, feel free to mix up the workout styles. It is important to keep each workout fresh, both with the type of exercises and the workout style. This ensures that the body doesn’t adapt to the workout and it is always challenging.
 
-If you have any questions about this, contact me at:
+If you have any questions about this, contact me at: [becca@traintomaintain.co.uk](mailto:becca@traintomaintain.co.uk).
 
-**becca@traintomaintain.co.uk**
+## References:
 
-References:
+De Salles, B.F., Simão, R., Miranda, F., Novaes, J. da S., Lemos, A. and Willardson, J.M. (2009). Rest interval between sets in strength training. _Sports medicine (Auckland, N.Z.)_, \[online] 39(9), pp.765–77. Available at:<https://www.ncbi.nlm.nih.gov/pubmed/19691365.>
 
-De Salles, B.F., Simão, R., Miranda, F., Novaes, J. da S., Lemos, A. and Willardson, J.M. (2009). Rest interval between sets in strength training._Sports medicine (Auckland, N.Z.)_, \[online] 39(9), pp.765–77. Available at:<https://www.ncbi.nlm.nih.gov/pubmed/19691365.>
+Mangine, G.T. et al (2015). The effect of training volume and intensity on improvements in muscular strength and size in resistance-trained men. _Physiological Reports_, \[online] 3(8), p.e12472. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4562558/pdf/phy20003-e12472.pdf.>
 
-Mangine, G.T. et al (2015). The effect of training volume and intensity on improvements in muscular strength and size in resistance-trained men._Physiological Reports_, \[online] 3(8), p.e12472. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4562558/pdf/phy20003-e12472.pdf.>
-
-McPherron, A.C., Guo, T., Bond, N.D. and Gavrilova, O. (2013). Increasing muscle mass to improve metabolism._Adipocyte_, \[online] 2(2), pp.92–98. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3661116/>\[Accessed 29 Oct. 2019].
+McPherron, A.C., Guo, T., Bond, N.D. and Gavrilova, O. (2013). Increasing muscle mass to improve metabolism. _Adipocyte_, \[online] 2(2), pp.92–98. Available at:<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3661116/>\[Accessed 29 Oct. 2019].
