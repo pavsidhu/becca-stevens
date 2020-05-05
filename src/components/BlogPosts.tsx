@@ -6,7 +6,7 @@ import LeftArrowIcon from "../images/icons/left-arrow.svg"
 import RightArrowIcon from "../images/icons/right-arrow.svg"
 import { BlogPostCard } from "."
 import DefaultTitle from "./DefaultTitle"
-import { size } from "../styles"
+import { colors, size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -113,9 +113,9 @@ const SeeMoreButton = styled(Link)`
   grid-area: see-more;
   justify-self: center;
   padding: 16px 32px;
-  border: 1px solid #773044;
+  border: 1px solid ${colors.darkPink};
   border-radius: 2px;
-  color: #773044;
+  color: ${colors.darkPink};
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
