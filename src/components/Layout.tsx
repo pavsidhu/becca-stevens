@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import styled, { createGlobalStyle } from "styled-components"
 import "loading-attribute-polyfill"
 
@@ -6,8 +7,6 @@ import { Footer, Header } from "."
 import { colors } from "../styles"
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
   * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -47,6 +47,9 @@ export default function Layout({ children }) {
   return (
     <>
       <GlobalStyle />
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+      </Helmet>
 
       <Header />
       <Content>
