@@ -101,9 +101,11 @@ const Content = styled.section`
     border-bottom: 1px solid ${colors.darkPink};
     transition: color 80ms, border-color 80ms;
 
-    &:hover {
-      color: ${colors.pink};
-      border-bottom-color: ${colors.pink};
+    @media (hover: hover) {
+      &:hover {
+        color: ${colors.pink};
+        border-bottom-color: ${colors.pink};
+      }
     }
   }
 

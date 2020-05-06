@@ -106,15 +106,18 @@ const NavItem = styled(Link)`
   color: ${colors.grey};
   font-size: 2.4rem;
   letter-spacing: 3px;
+  position: relative;
 
   @media (min-width: ${size.medium}) {
+    padding: 16px 8px;
     font-size: 1.2rem;
     letter-spacing: 3px;
   }
 
   @media (hover: hover) {
     &:hover {
-      color: ${colors.black};
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: ${colors.grey};
     }
   }
 `
@@ -130,7 +133,7 @@ const Divider = styled.div`
   @media (min-width: ${size.medium}) {
     width: 2px;
     height: 3.2rem;
-    margin: 0 24px;
+    margin: 0 16px;
   }
 `
 
@@ -149,12 +152,18 @@ const SocialIcon = styled.a`
     margin-top: 0;
     margin-left: 24px;
   }
+
+  @media (hover: hover) {
+    &:hover {
+      background: ${colors.darkPink};
+    }
+  }
 `
 
 const Instagram = styled(InstagramIcon)`
   width: 100%;
   height: 100%;
-  fill: white;
+  fill: ${colors.white};
 `
 
 export default function Header() {

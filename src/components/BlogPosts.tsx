@@ -1,5 +1,5 @@
-import React, { useRef } from "react"
-import styled from "styled-components"
+import React, { useRef, useLayoutEffect, useState } from "react"
+import styled, { css } from "styled-components"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
 import LeftArrowIcon from "../images/icons/left-arrow.svg"
@@ -42,15 +42,15 @@ const Title = styled(DefaultTitle)`
 `
 
 const BlogPostList = styled.div`
-  grid-area: posts;
-  display: grid;
-  grid-template-rows: repeat(4, min(60vw, 400px));
-  gap: 24px;
-
   /* Only show 4 blog posts */
   & *:nth-child(n + 5) {
     display: none;
   }
+
+  grid-area: posts;
+  display: grid;
+  grid-template-rows: repeat(4, min(60vw, 400px));
+  gap: 24px;
 
   @media (min-width: 550px) {
     grid-column: 2 / 3;
@@ -59,7 +59,8 @@ const BlogPostList = styled.div`
   }
 
   @media (min-width: ${size.medium}) {
-    & *:nth-child(n + 5) {
+    /* Show all available blog posts */
+    & *:nth-child(n + 4) {
       display: flex;
     }
 
@@ -80,13 +81,12 @@ const BlogPostList = styled.div`
   }
 `
 
-const LeftArrow = styled(LeftArrowIcon)`
+const arrow = css`
   display: none;
+  transition: transform 100ms;
 
   @media (min-width: ${size.medium}) {
     display: block;
-    grid-area: left-arrow;
-    justify-self: end;
     width: 32px;
     height: 64px;
     z-index: 2;
@@ -94,17 +94,33 @@ const LeftArrow = styled(LeftArrowIcon)`
   }
 `
 
+const LeftArrow = styled(LeftArrowIcon)`
+  ${arrow}
+  
+  @media (min-width: ${size.medium}) {
+    grid-area: left-arrow;
+    justify-self: end;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateX(-5px);
+    }
+  }
+`
+
 const RightArrow = styled(RightArrowIcon)`
-  display: none;
+  ${arrow}
 
   @media (min-width: ${size.medium}) {
-    display: block;
     grid-area: right-arrow;
     justify-self: start;
-    width: 32px;
-    height: 64px;
-    z-index: 2;
-    cursor: pointer;
+  }
+  
+  @media (hover: hover) {
+    &:hover {
+      transform: translateX(5px);
+    }
   }
 `
 
@@ -119,6 +135,14 @@ const SeeMoreButton = styled(Link)`
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   outline: none;
+  transition: background-color 80ms, color 80ms;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: ${colors.darkPink};
+      color: ${colors.white};
+    }
+  }
 `
 
 export default function BlogPosts() {

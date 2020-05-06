@@ -24,6 +24,18 @@ const SocialIcon = styled.a`
   width: 32px;
   height: 32px;
   padding: 8px;
+  border-radius: 50%;
+  transition: background-color 80ms;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #fff;
+
+      svg {
+        fill: ${colors.pink};
+      }
+    }
+  }
 `
 
 const Instagram = styled(InstagramIcon)`
