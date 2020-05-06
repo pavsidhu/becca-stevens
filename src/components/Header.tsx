@@ -165,7 +165,7 @@ export default function Header() {
       <Menu onClick={() => setMenuVisible(true)} />
 
       <Title>
-        <Link to="">Maintain Fitness</Link>
+        <Link to="/">Maintain Fitness</Link>
       </Title>
 
       <Nav isVisible={isMenuVisible}>
@@ -173,7 +173,7 @@ export default function Header() {
 
         <NavItem to="/blog">Blog</NavItem>
         <Divider />
-        <NavItem to="">About</NavItem>
+        <NavItem to="/#about">About</NavItem>
         <Divider />
         <NavItem to="">Contact</NavItem>
 

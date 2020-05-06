@@ -82,7 +82,7 @@ const P = styled.p`
 
 export default function About() {
   return (
-    <Container>
+    <Container id="about">
       <Background />
 
       <Image src={becca} alt="Becca" />

@@ -72,7 +72,6 @@ const BlogPostList = styled.div`
     overflow-x: scroll;
     overscroll-behavior-x: none;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     -ms-overflow-style: none;
 
     &::-webkit-scrollbar {
