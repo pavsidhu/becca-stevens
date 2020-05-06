@@ -144,6 +144,7 @@ const SocialIcon = styled.a`
   height: 48px;
   width: 48px;
   margin-top: 48px;
+  transition: background 80ms;
 
   @media (min-width: ${size.medium}) {
     padding: 10px;
@@ -155,7 +156,7 @@ const SocialIcon = styled.a`
 
   @media (hover: hover) {
     &:hover {
-      background: ${colors.darkPink};
+      background: ${colors.lightPink};
     }
   }
 `

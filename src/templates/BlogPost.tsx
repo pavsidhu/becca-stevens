@@ -83,6 +83,7 @@ const Content = styled.section`
   word-break: break-word;
 
   * {
+    color: ${colors.black};
     max-width: 700px;
     width: 100%;
   }
@@ -97,14 +98,13 @@ const Content = styled.section`
   }
 
   a {
-    color: ${colors.darkPink};
-    border-bottom: 1px solid ${colors.darkPink};
-    transition: color 80ms, border-color 80ms;
+    color: ${colors.blue};
+    border-bottom: 1px solid ${colors.blue};
+    transition: filter 80ms;
 
     @media (hover: hover) {
       &:hover {
-        color: ${colors.pink};
-        border-bottom-color: ${colors.pink};
+        filter: brightness(2);
       }
     }
   }

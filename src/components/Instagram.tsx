@@ -50,10 +50,17 @@ const Handle = styled.h4`
   letter-spacing: 0.2rem;
   font-size: 2rem;
   font-weight: 300;
-  color: ${colors.black};
+  color: ${colors.blue};
 
   @media (min-width: ${size.medium}) {
     justify-self: end;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: ${colors.pink};
+    }
   }
 `
 

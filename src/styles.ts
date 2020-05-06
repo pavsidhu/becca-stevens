@@ -3,7 +3,8 @@ const colors = {
   grey: "#585557",
   white: "#ffffff",
   pink: "#CA8080",
-  darkPink: "#773044",
+  lightPink: "#e6a5a5",
+  blue: "#41596d",
 }
 
 const size = {
