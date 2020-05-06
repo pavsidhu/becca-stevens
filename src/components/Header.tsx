@@ -102,7 +102,7 @@ const Exit = styled(ExitIcon)`
   }
 `
 
-const NavItem = styled(Link)`
+const navItem = css`
   color: ${colors.grey};
   font-size: 2.4rem;
   letter-spacing: 3px;
@@ -120,6 +120,14 @@ const NavItem = styled(Link)`
       -webkit-text-stroke-color: ${colors.grey};
     }
   }
+`
+
+const NavItemLink = styled(Link)`
+  ${navItem}
+`
+
+const NavItemA = styled.a`
+  ${navItem}
 `
 
 const Divider = styled.div`
@@ -181,11 +189,11 @@ export default function Header() {
       <Nav isVisible={isMenuVisible}>
         <Exit onClick={() => setMenuVisible(false)} />
 
-        <NavItem to="/#about">About</NavItem>
+        <NavItemLink to="/#about">About</NavItemLink>
         <Divider />
-        <NavItem to="/blog">Blog</NavItem>
+        <NavItemLink to="/blog">Blog</NavItemLink>
         <Divider />
-        <NavItem to="/contact">Contact</NavItem>
+        <NavItemA href="mailto:becca@traintomaintain.co.uk">Contact</NavItemA>
 
         <SocialIcon href="https://instagram.com/maintain.fitness">
           <Instagram />
