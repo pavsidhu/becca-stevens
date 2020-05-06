@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import { graphql } from "gatsby"
 
 import { Layout, SEO, DefaultTitle, Instagram } from "../components"
-import { colors } from "../styles"
+import { colors, size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -60,14 +60,18 @@ const Title = styled(DefaultTitle)`
   color: ${colors.white};
   align-self: end;
   font-size: 2.4rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.4rem;
   z-index: 1;
-  max-width: 60ch;
+  max-width: 700px;
+
+  @media (min-width: ${size.medium}) {
+    font-size: 3.2rem;
+  }
 `
 
 const Date = styled.p`
   grid-area: date;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: ${colors.white};
   z-index: 1;
@@ -88,13 +92,33 @@ const Content = styled.section`
     width: 100%;
   }
 
+  > :not(img):not(video) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: ${size.medium}) {
+    > :not(img):not(video) {
+      padding: initial;
+    }
+  }
+
   h2,
   h3,
   h4,
   h5,
   h6 {
     padding: 8px 0 0;
-    font-weight: 600;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
 
   a {
@@ -107,11 +131,6 @@ const Content = styled.section`
         filter: brightness(2);
       }
     }
-  }
-
-  img,
-  video {
-    border-radius: 2px;
   }
 
   img {
