@@ -82,19 +82,7 @@ const Content = styled.section`
   justify-items: center;
   word-break: break-word;
 
-  & > *:not(img):not(video) {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  ul,
-  ol,
-  p {
+  * {
     max-width: 700px;
     width: 100%;
   }
@@ -106,11 +94,6 @@ const Content = styled.section`
   h6 {
     padding: 8px 0 0;
     font-weight: 600;
-  }
-
-  ul,
-  ol {
-    list-style-position: inside;
   }
 
   a {
@@ -126,13 +109,16 @@ const Content = styled.section`
 
   img,
   video {
-    width: 100%;
-    max-width: 800px;
     border-radius: 2px;
   }
 
   img {
     filter: brightness(0.9);
+  }
+
+  ul,
+  ol {
+    list-style-position: inside;
   }
 `
 
