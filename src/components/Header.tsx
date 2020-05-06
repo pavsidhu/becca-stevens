@@ -177,7 +177,7 @@ export default function Header() {
         <Divider />
         <NavItem to="/contact">Contact</NavItem>
 
-        <SocialIcon href="https://instagram.com/traintomaintain">
+        <SocialIcon href="https://instagram.com/maintain.fitness">
           <Instagram />
         </SocialIcon>
       </Nav>

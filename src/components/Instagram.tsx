@@ -104,7 +104,7 @@ export default function Instagram() {
       </TitleContainer>
 
       <Handle>
-        <a href="https://instagram.com/traintomaintain">@traintomaintain</a>
+        <a href="https://instagram.com/maintain.fitness">@maintain.fitness</a>
       </Handle>
       <Posts>
         {getInstagramPosts.allInstaNode.edges.map(({ node }) => (

@@ -62,4 +62,4 @@ As long as you’re tracking the majority of your foods, you don’t need to obs
 
 Thanks for reading! I hope it helped some of you!
 
-Check out my Instagram [@traintomaintain](https://www.instagram.com/traintomaintain/?hl=en) for more fitness-based information!
+Check out my Instagram [@maintain.fitness](https://www.instagram.com/maintain.fitness) for more fitness-based information!

@@ -64,4 +64,4 @@ Although it’s starting to look more and more like we’ll have a ban on exerci
 
 I hope you have enjoyed this blog and are staying safe!
 
-Check out my Instagram [@traintomaintain](https://instagram.com/traintomaintain)
+Check out my Instagram [@maintain.fitness](https://instagram.com/maintain.fitness)
