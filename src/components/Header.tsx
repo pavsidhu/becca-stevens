@@ -171,9 +171,9 @@ export default function Header() {
       <Nav isVisible={isMenuVisible}>
         <Exit onClick={() => setMenuVisible(false)} />
 
-        <NavItem to="/blog">Blog</NavItem>
-        <Divider />
         <NavItem to="/#about">About</NavItem>
+        <Divider />
+        <NavItem to="/blog">Blog</NavItem>
         <Divider />
         <NavItem to="">Contact</NavItem>
 
