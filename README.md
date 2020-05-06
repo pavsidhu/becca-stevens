@@ -1,7 +1,7 @@
-# Train to Maintain
+# Maintain Fitness
 
 > Train to Maintain 🏋🏼‍♀️
 
 ## License
 
-MIT © [Train to Maintain](https://traintomaintain.co.uk)
+MIT © [Maintain Fitness](https://traintomaintain.co.uk)
