@@ -152,7 +152,7 @@ export default function BlogPost({ data }) {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title={post.frontmatter.title} />
 
       <Container>
         <Cover>
