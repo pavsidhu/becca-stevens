@@ -59,7 +59,7 @@ const Handle = styled.h4`
   @media (hover: hover) {
     &:hover {
       -webkit-text-stroke-width: 0.5px;
-      -webkit-text-stroke-color: ${colors.pink};
+      -webkit-text-stroke-color: ${colors.blue};
     }
   }
 `
