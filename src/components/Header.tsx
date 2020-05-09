@@ -195,7 +195,11 @@ export default function Header() {
         <Divider />
         <NavItemA href="mailto:becca@traintomaintain.co.uk">Contact</NavItemA>
 
-        <SocialIcon href="https://instagram.com/maintain.fitness">
+        <SocialIcon
+          href="https://instagram.com/maintain.fitness"
+          target="_blank"
+          rel="noopener"
+        >
           <Instagram />
         </SocialIcon>
       </Nav>

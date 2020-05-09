@@ -127,11 +127,22 @@ export default function Instagram() {
       </TitleContainer>
 
       <Handle>
-        <a href="https://instagram.com/maintain.fitness">@maintain.fitness</a>
+        <a
+          href="https://instagram.com/maintain.fitness"
+          target="_blank"
+          rel="noopener"
+        >
+          @maintain.fitness
+        </a>
       </Handle>
       <Posts>
         {getInstagramPosts.allInstaNode.edges.map(({ node }) => (
-          <a href={`https://instagram.com/p/${node.id}`} key={node.id}>
+          <a
+            href={`https://instagram.com/p/${node.id}`}
+            target="_blank"
+            rel="noopener"
+            key={node.id}
+          >
             <PostImage src={node.preview} alt={node.caption} loading="lazy" />
           </a>
         ))}
