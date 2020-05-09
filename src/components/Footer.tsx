@@ -51,6 +51,7 @@ export default function Footer() {
 
       <SocialIcon
         href="https://instagram.com/maintain.fitness"
+        aria-label="Instagram"
         target="_blank"
         rel="noopener"
       >

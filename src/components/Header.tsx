@@ -197,6 +197,7 @@ export default function Header() {
 
         <SocialIcon
           href="https://instagram.com/maintain.fitness"
+          aria-label="Instagram"
           target="_blank"
           rel="noopener"
         >
