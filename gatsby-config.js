@@ -61,7 +61,16 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: ["gatsby-remark-unwrap-images", "gatsby-remark-picture"],
+        plugins: [
+          "gatsby-remark-unwrap-images",
+          "gatsby-remark-picture",
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              rel: "noopener",
+            },
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
