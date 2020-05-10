@@ -1,24 +1,24 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 
-import becca from "../images/becca.jpg"
 import { colors, size } from "../styles"
 
 const Container = styled.article`
   height: calc(100vh - var(--header-height));
+  width: 100vw;
   display: grid;
   grid-template-areas: "content";
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.1));
 `
 
-const Photo = styled.img`
+const Photo = styled(Image)`
   grid-area: content;
   height: 100%;
-  width: 100%;
-  object-position: 50%;
-  object-fit: cover;
   filter: brightness(0.6);
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 
@@ -117,6 +117,18 @@ const Description = styled.p`
 `
 
 export default function Intro() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "hero.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Container>
       <Triangles>
@@ -124,7 +136,12 @@ export default function Intro() {
         <TriangleEnd />
       </Triangles>
 
-      <Photo src={becca} alt="Becca" loading="eager" />
+      <Photo
+        fluid={data.file.childImageSharp.fluid}
+        alt="Becca"
+        loading="eager"
+        draggable={false}
+      />
 
       <Highlight />
 
