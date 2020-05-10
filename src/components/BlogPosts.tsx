@@ -4,9 +4,10 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Title from "./Title"
 import BlogPostCard from "./BlogPostCard"
+import Button from "./Button"
 import LeftArrowIcon from "../images/icons/left-arrow.svg"
 import RightArrowIcon from "../images/icons/right-arrow.svg"
-import { colors, size } from "../styles"
+import { size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -123,26 +124,9 @@ const RightArrow = styled(RightArrowIcon)`
   }
 `
 
-const SeeMoreButton = styled(Link)`
+const SeeMoreButton = styled(Button)`
   grid-area: see-more;
   justify-self: center;
-  padding: 16px 32px;
-  border: 1px solid ${colors.blue};
-  border-radius: 2px;
-  color: ${colors.blue};
-  font-size: 1.4rem;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  outline: none;
-  transition: background-color 80ms, color 80ms;
-  user-select: none;
-
-  @media (hover: hover) {
-    &:hover {
-      background-color: ${colors.blue};
-      color: ${colors.white};
-    }
-  }
 `
 
 export default function BlogPosts() {
