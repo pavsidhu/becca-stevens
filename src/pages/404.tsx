@@ -32,7 +32,7 @@ export default function NotFoundPage() {
 
       <Container>
         <NotFoundTitle>Page Not Found</NotFoundTitle>
-        <HomeButton>Go Back Home</HomeButton>
+        <HomeButton to="/">Go Back Home</HomeButton>
       </Container>
     </Layout>
   )
