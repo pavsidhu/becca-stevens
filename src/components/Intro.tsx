@@ -87,7 +87,7 @@ const TriangleEnd = styled.div`
 
 const Greeting = styled.div`
   grid-area: content;
-  max-width: calc(100vw - 32px);
+  max-width: calc(100vw - 48px);
   justify-self: center;
   display: flex;
   flex-direction: column;
