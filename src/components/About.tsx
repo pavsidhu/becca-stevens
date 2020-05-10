@@ -88,7 +88,7 @@ export default function About() {
       file(relativePath: { eq: "about.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

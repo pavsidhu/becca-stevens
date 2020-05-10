@@ -123,7 +123,7 @@ export default function Intro() {
       file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

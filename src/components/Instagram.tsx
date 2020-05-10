@@ -145,7 +145,13 @@ export default function Instagram() {
             rel="noopener"
             key={node.id}
           >
-            <PostImage src={node.preview} alt={node.caption} loading="lazy" />
+            <PostImage
+              src={node.preview}
+              alt={node.caption}
+              loading="lazy"
+              width="100"
+              height="100"
+            />
           </a>
         ))}
       </Posts>
