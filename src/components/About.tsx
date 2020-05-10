@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
 
 import { colors, size } from "../styles"
-import becca from "../images/about.jpg"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Container = styled.article`
   display: grid;
@@ -49,7 +50,7 @@ const Background = styled.div`
   }
 `
 
-const Image = styled.img`
+const BeccaPhoto = styled(Image)`
   grid-area: photo;
   width: 100%;
   filter: brightness(0.9);
@@ -81,11 +82,27 @@ const P = styled.p`
 `
 
 export default function About() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "about.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Container id="about">
       <Background />
 
-      <Image src={becca} alt="Becca" />
+      <BeccaPhoto
+        fluid={data.file.childImageSharp.fluid}
+        alt="Becca"
+        draggable={false}
+      />
 
       <Subtitle>
         I’m a Sports Science student at the University of Birmingham.
