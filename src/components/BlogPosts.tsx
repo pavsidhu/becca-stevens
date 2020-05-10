@@ -168,7 +168,7 @@ export default function BlogPosts() {
   }
 
   const getBlogPosts = useStaticQuery<GetBlogPosts>(graphql`
-    query GetBlogPostsList {
+    query {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 8
