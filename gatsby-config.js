@@ -23,6 +23,7 @@ module.exports = {
         background_color: `#CA8080`,
         theme_color: `#CA8080`,
         display: `minimal-ui`,
+        icon: `src/images/favicon.png`,
       },
     },
     {
