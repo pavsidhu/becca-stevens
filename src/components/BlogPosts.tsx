@@ -136,6 +136,7 @@ const SeeMoreButton = styled(Link)`
   text-transform: uppercase;
   outline: none;
   transition: background-color 80ms, color 80ms;
+  user-select: none;
 
   @media (hover: hover) {
     &:hover {

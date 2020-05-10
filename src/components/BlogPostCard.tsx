@@ -21,6 +21,7 @@ const Container = styled(Link)`
     0 2.2px 2.2px rgba(0, 0, 0, 0.06), 0 4.2px 4.2px rgba(0, 0, 0, 0.072),
     0 10px 10px rgba(0, 0, 0, 0.1);
   will-change: transform;
+  user-select: none;
 
   * {
     transition: transform 100ms ease-in-out;

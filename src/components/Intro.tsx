@@ -21,6 +21,7 @@ const Photo = styled(Image)`
   height: 100%;
   filter: brightness(0.6);
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  user-select: none;
 
   @media (min-width: ${size.medium}) {
     clip-path: polygon(0 0, 70% 0, 100% 100%, 30% 100%);

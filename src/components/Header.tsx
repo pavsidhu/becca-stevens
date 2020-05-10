@@ -21,6 +21,7 @@ const Container = styled.header`
   background: ${colors.white};
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
+  user-select: none;
 
   @media (min-width: ${size.medium}) {
     padding: 24px 64px;

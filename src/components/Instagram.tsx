@@ -51,6 +51,7 @@ const Handle = styled.h4`
   font-size: 2rem;
   font-weight: 300;
   color: ${colors.blue};
+  user-select: none;
 
   @media (min-width: ${size.medium}) {
     justify-self: end;
@@ -90,6 +91,7 @@ const PostImage = styled.img`
     0 0.7px 0.7px rgba(0, 0, 0, 0.04), 0 1.3px 1.3px rgba(0, 0, 0, 0.05),
     0 2.2px 2.2px rgba(0, 0, 0, 0.06), 0 4.2px 4.2px rgba(0, 0, 0, 0.072),
     0 10px 10px rgba(0, 0, 0, 0.1);
+  user-select: none;
 
   @media (hover: hover) {
     &:hover {

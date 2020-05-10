@@ -55,6 +55,7 @@ const BeccaPhoto = styled(Image)`
   width: 100%;
   filter: brightness(0.9);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  user-select: none;
 `
 
 const Subtitle = styled.h3`
