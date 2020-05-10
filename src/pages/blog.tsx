@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
-import { Layout, SEO, DefaultTitle, BlogPostCard } from "../components"
+import { Layout, SEO, Title, BlogPostCard } from "../components"
 import { size } from "../styles"
 
 const Container = styled.article`
@@ -22,7 +22,7 @@ const Container = styled.article`
   }
 `
 
-const Title = styled(DefaultTitle)`
+const BlogTitle = styled(Title)`
   grid-area: title;
 `
 
@@ -49,7 +49,7 @@ export default function Blog({ data }: { data: GetBlogPosts }) {
       <SEO title="Blog" />
 
       <Container>
-        <Title>Blog</Title>
+        <BlogTitle>Blog</BlogTitle>
 
         <BlogPostList>
           {data.allMarkdownRemark.edges.map(({ node }) => (

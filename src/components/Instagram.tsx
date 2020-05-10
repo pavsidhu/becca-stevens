@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 
-import DefaultTitle from "./DefaultTitle"
-import InstagramIcon from "../images/icons/instagram.svg"
+import { Title } from "."
 import { colors, size } from "../styles"
+import InstagramIcon from "../images/icons/instagram.svg"
 
 const Container = styled.article`
   display: grid;
@@ -40,7 +40,7 @@ const TitleContainer = styled.div`
   grid-area: title;
 `
 
-const Title = styled(DefaultTitle)`
+const InstagramTitle = styled(Title)`
   margin-left: 16px;
 `
 
@@ -125,7 +125,7 @@ export default function Instagram() {
     <Container>
       <TitleContainer>
         <InstagramIcon />
-        <Title>My Instagram</Title>
+        <InstagramTitle>My Instagram</InstagramTitle>
       </TitleContainer>
 
       <Handle>

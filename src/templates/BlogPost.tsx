@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import { graphql } from "gatsby"
 
-import { Layout, SEO, DefaultTitle, Instagram } from "../components"
+import { Layout, SEO, Title, Instagram } from "../components"
 import { colors, size } from "../styles"
 
 const Container = styled.article`
@@ -54,9 +54,8 @@ const CoverRectangle = styled.div`
   background: ${colors.pink};
 `
 
-const Title = styled(DefaultTitle)`
+const BlogPostTitle = styled(Title)`
   grid-area: title;
-  text-align: center;
   color: ${colors.white};
   align-self: end;
   font-size: 2.4rem;
@@ -156,7 +155,7 @@ export default function BlogPost({ data }) {
 
       <Container>
         <Cover>
-          <Title>{post.frontmatter.title}</Title>
+          <BlogPostTitle>{post.frontmatter.title}</BlogPostTitle>
           <Date>{post.frontmatter.date}</Date>
 
           <CoverRectangle />

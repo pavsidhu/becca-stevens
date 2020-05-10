@@ -1,11 +1,11 @@
-import React, { useRef, useLayoutEffect, useState } from "react"
+import React, { useRef } from "react"
 import styled, { css } from "styled-components"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
+import Title from "./Title"
+import BlogPostCard from "./BlogPostCard"
 import LeftArrowIcon from "../images/icons/left-arrow.svg"
 import RightArrowIcon from "../images/icons/right-arrow.svg"
-import { BlogPostCard } from "."
-import DefaultTitle from "./DefaultTitle"
 import { colors, size } from "../styles"
 
 const Container = styled.article`
@@ -36,9 +36,8 @@ const Container = styled.article`
   }
 `
 
-const Title = styled(DefaultTitle)`
+const BlogPostsTitle = styled(Title)`
   grid-area: title;
-  text-align: center;
 `
 
 const BlogPostList = styled.div`
@@ -193,7 +192,7 @@ export default function BlogPosts() {
 
   return (
     <Container>
-      <Title>My Recent Blog Posts</Title>
+      <BlogPostsTitle>My Recent Blog Posts</BlogPostsTitle>
 
       <BlogPostList ref={blogPostListRef}>
         {getBlogPosts.allMarkdownRemark.edges.map(({ node }) => (
