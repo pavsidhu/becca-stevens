@@ -1,5 +1,5 @@
 import About from "./About"
-import BlogPosts from "./BlogPosts"
+import BlogPostReel from "./BlogPostReel"
 import BlogPostCard from "./BlogPostCard"
 import Button from "./Button"
 import Title from "./Title"
@@ -12,7 +12,7 @@ import SEO from "./SEO"
 
 export {
   About,
-  BlogPosts,
+  BlogPostReel,
   BlogPostCard,
   Button,
   Title,

@@ -1,13 +1,20 @@
 import React from "react"
 
-import { Layout, SEO, Intro, BlogPosts, About, Instagram } from "../components"
+import {
+  Layout,
+  SEO,
+  Intro,
+  BlogPostReel,
+  About,
+  Instagram,
+} from "../components"
 
 export default function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
       <Intro />
-      <BlogPosts />
+      <BlogPostReel />
       <About />
       <Instagram />
     </Layout>
