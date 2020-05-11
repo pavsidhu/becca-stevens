@@ -17,5 +17,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Cover Image", name: "coverImage", widget: "image" }
-      - { label: "Cover Image Alt", name: "coverImageAlt", widget: "text" }
+      - { label: "Cover Image Alt", name: "coverImageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
