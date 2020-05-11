@@ -14,7 +14,7 @@ const Container = styled.header`
   top: 0;
   left: 0;
   flex: 1;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   align-items: center;
   padding: 24px 32px;

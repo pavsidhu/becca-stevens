@@ -1,6 +1,7 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import { Layout, SEO, Title, Instagram } from "../components"
 import { colors, size } from "../styles"
@@ -11,7 +12,7 @@ const Container = styled.article`
     "cover    "
     "content  "
     "instagram";
-  grid-template-rows: minmax(50vh, auto) auto auto;
+  grid-template-rows: minmax(50vh, 400px) auto auto;
   row-gap: 24px;
 `
 
@@ -29,20 +30,12 @@ const Cover = styled.div`
   filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.1));
 `
 
-const CoverImage = styled.div`
+const CoverImage = styled(Img)`
   grid-row: -1 / 1;
   grid-column: -1 / 1;
-  height: 100%;
   width: 100%;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
-  background-size: cover;
-  background-position: 50%;
-
-  ${(props: { background: string }) => css`
-    background-image: 
-      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("${props.background}");
-  `}
+  filter: brightness(0.6);
 `
 
 const CoverRectangle = styled.div`
@@ -147,22 +140,26 @@ const StyledInstagram = styled(Instagram)`
 `
 
 export default function BlogPost({ data }) {
-  const post = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO title={frontmatter.title} />
 
       <Container>
         <Cover>
-          <BlogPostTitle>{post.frontmatter.title}</BlogPostTitle>
-          <Date>{post.frontmatter.date}</Date>
+          <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
+          <Date>{frontmatter.date}</Date>
 
           <CoverRectangle />
-          <CoverImage background={post.frontmatter.coverImage} />
+          <CoverImage
+            fluid={frontmatter.coverImage.childImageSharp.fluid}
+            alt={frontmatter.coverImageAlt}
+            draggable={false}
+          />
         </Cover>
 
-        <Content dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Content dangerouslySetInnerHTML={{ __html: html }} />
 
         <StyledInstagram />
       </Container>
@@ -177,7 +174,13 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "D MMMM YYYY")
-        coverImage
+        coverImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
     }
   }

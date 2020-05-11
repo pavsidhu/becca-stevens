@@ -39,15 +39,22 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
+        name: `blogPosts`,
         path: `${__dirname}/content/blog/`,
         ignore: [`**/\.*`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogPostImages`,
+        path: `${__dirname}/static/images/`,
       },
     },
     {
@@ -64,7 +71,14 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          "gatsby-remark-unwrap-images",
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+              quality: 80,
+              withWebp: true,
+            },
+          },
           {
             resolve: "gatsby-remark-external-links",
             options: {

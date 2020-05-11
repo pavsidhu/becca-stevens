@@ -61,7 +61,7 @@ const BlogPostList = styled.div`
   @media (min-width: ${size.medium}) {
     /* Show all available blog posts */
     & *:nth-child(n + 4) {
-      display: flex;
+      display: grid;
     }
 
     grid-column: 1 / 5;
@@ -162,7 +162,14 @@ export default function BlogPosts() {
             id
             frontmatter {
               title
-              coverImage
+              coverImage {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+
               date(formatString: "D MMM YYYY")
             }
             fields {

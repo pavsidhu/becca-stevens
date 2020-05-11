@@ -69,7 +69,13 @@ export const query = graphql`
           id
           frontmatter {
             title
-            coverImage
+            coverImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
             date(formatString: "D MMM YYYY")
           }
           fields {

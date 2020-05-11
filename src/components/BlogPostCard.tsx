@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react"
 import styled, { css } from "styled-components"
+import Img from "gatsby-image"
 import { Link } from "gatsby"
 
 import { colors, size } from "../styles"
@@ -7,20 +8,21 @@ import { colors, size } from "../styles"
 const Container = styled(Link)`
   width: 100%;
   height: 100%;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  background-size: cover;
-  background-position: 50%;
+  display: grid;
+  grid-template-areas:
+    ". .     ."
+    ". date  ."
+    ". title ."
+    ". .     .";
+  grid-template-rows: minmax(16px, 1fr) auto auto 16px;
+  grid-template-columns: 16px 1fr 16px;
   scroll-snap-align: center;
-  transition: transform 100ms, box-shadow 100ms;
+
+  transition: transform 100ms;
   box-shadow: 0 0.3px 0.3px rgba(0, 0, 0, 0.028),
     0 0.7px 0.7px rgba(0, 0, 0, 0.04), 0 1.3px 1.3px rgba(0, 0, 0, 0.05),
     0 2.2px 2.2px rgba(0, 0, 0, 0.06), 0 4.2px 4.2px rgba(0, 0, 0, 0.072),
     0 10px 10px rgba(0, 0, 0, 0.1);
-  will-change: transform;
   user-select: none;
 
   * {
@@ -28,16 +30,8 @@ const Container = styled(Link)`
   }
 
   @media (hover: hover) {
-    &:hover {
-      /* transform: scale(1.02); */
-      box-shadow: 0 0.3px 0.4px rgba(0, 0, 0, 0.014),
-        0 0.7px 1px rgba(0, 0, 0, 0.02), 0 1.3px 1.9px rgba(0, 0, 0, 0.025),
-        0 2.2px 3.4px rgba(0, 0, 0, 0.03), 0 4.2px 6.3px rgba(0, 0, 0, 0.036),
-        0 10px 15px rgba(0, 0, 0, 0.05);
-
-      * {
-        transform: translateY(-5px);
-      }
+    &:hover p {
+      transform: translateY(-5px);
     }
   }
 
@@ -56,39 +50,50 @@ const Container = styled(Link)`
       }
     }
   }
+`
 
-  ${(props: { background: string }) => css`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url("${props.background}");
-    
-    @media (hover:hover) {
-      &:hover {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.4)), url("${props.background}");
-      }
-    }
-  `}
+const CoverImageGradient = styled.div`
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5));
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  z-index: 1;
+
+  &:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.4));
+  }
+`
+
+const CoverImage = styled(Img)`
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
 `
 
 const Date = styled.p`
+  grid-area: date;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.4rem;
   color: ${colors.white};
   margin-bottom: 8px;
+  z-index: 2;
 `
 
 const Title = styled.p`
+  grid-area: title;
   text-align: center;
   font-size: 1.6rem;
   color: ${colors.white};
+  z-index: 2;
 `
 
 export default forwardRef(
   ({ post }: { post: BlogPost }, ref: React.MutableRefObject<typeof Link>) => (
-    <Container
-      to={`/blog${post.fields.slug}`}
-      background={post.frontmatter.coverImage}
-      ref={ref}
-    >
+    <Container to={`/blog${post.fields.slug}`} ref={ref}>
+      <CoverImageGradient />
+      <CoverImage fluid={post.frontmatter.coverImage.childImageSharp.fluid} />
       <Date>{post.frontmatter.date}</Date>
       <Title>{post.frontmatter.title}</Title>
     </Container>
