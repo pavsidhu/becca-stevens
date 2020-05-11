@@ -65,7 +65,6 @@ module.exports = {
       options: {
         plugins: [
           "gatsby-remark-unwrap-images",
-          "gatsby-remark-picture",
           {
             resolve: "gatsby-remark-external-links",
             options: {
