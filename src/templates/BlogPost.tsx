@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Layout, SEO, Title, Instagram } from "../components"
+import { SEO, Title, Instagram } from "../components"
 import { colors, size } from "../styles"
 
 const Container = styled.article`
@@ -143,27 +143,25 @@ export default function BlogPost({ data }) {
   const { frontmatter, html } = data.markdownRemark
 
   return (
-    <Layout>
+    <Container>
       <SEO title={frontmatter.title} />
 
-      <Container>
-        <Cover>
-          <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
-          <Date>{frontmatter.date}</Date>
+      <Cover>
+        <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
+        <Date>{frontmatter.date}</Date>
 
-          <CoverRectangle />
-          <CoverImage
-            fluid={frontmatter.coverImage.childImageSharp.fluid}
-            alt={frontmatter.coverImageAlt}
-            draggable={false}
-          />
-        </Cover>
+        <CoverRectangle />
+        <CoverImage
+          fluid={frontmatter.coverImage.childImageSharp.fluid}
+          alt={frontmatter.coverImageAlt}
+          draggable={false}
+        />
+      </Cover>
 
-        <Content dangerouslySetInnerHTML={{ __html: html }} />
+      <Content dangerouslySetInnerHTML={{ __html: html }} />
 
-        <StyledInstagram />
-      </Container>
-    </Layout>
+      <StyledInstagram />
+    </Container>
   )
 }
 

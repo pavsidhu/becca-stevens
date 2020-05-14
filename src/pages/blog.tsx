@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
-import { Layout, SEO, Title, BlogPostCard } from "../components"
+import { SEO, Title, BlogPostCard } from "../components"
 import { size } from "../styles"
 
 const Container = styled.article`
@@ -45,19 +45,17 @@ const BlogPostList = styled.div`
 
 export default function Blog({ data }: { data: GetBlogPosts }) {
   return (
-    <Layout>
+    <Container>
       <SEO title="Blog" />
 
-      <Container>
-        <BlogTitle>Blog</BlogTitle>
+      <BlogTitle>Blog</BlogTitle>
 
-        <BlogPostList>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <BlogPostCard post={node} key={node.id} />
-          ))}
-        </BlogPostList>
-      </Container>
-    </Layout>
+      <BlogPostList>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <BlogPostCard post={node} key={node.id} />
+        ))}
+      </BlogPostList>
+    </Container>
   )
 }
 

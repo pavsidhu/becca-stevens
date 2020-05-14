@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Layout, SEO, Title, Button } from "../components"
+import { SEO, Title, Button } from "../components"
 
 const Container = styled.article`
   display: grid;
@@ -27,13 +27,11 @@ const HomeButton = styled(Button)`
 
 export default function NotFoundPage() {
   return (
-    <Layout>
+    <Container>
       <SEO title="Page Not Found" />
 
-      <Container>
-        <NotFoundTitle>Page Not Found</NotFoundTitle>
-        <HomeButton to="/">Go Back Home</HomeButton>
-      </Container>
-    </Layout>
+      <NotFoundTitle>Page Not Found</NotFoundTitle>
+      <HomeButton to="/">Go Back Home</HomeButton>
+    </Container>
   )
 }
