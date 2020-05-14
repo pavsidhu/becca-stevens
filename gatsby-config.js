@@ -13,7 +13,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
