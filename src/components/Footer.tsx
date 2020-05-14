@@ -50,7 +50,7 @@ export default function Footer() {
       <Copyright>© {new Date().getFullYear()} Maintain Fitness</Copyright>
 
       <SocialIcon
-        href="https://instagram.com/maintain.fitness"
+        href="https://instagram.com/beccastevensfit"
         aria-label="Instagram"
         target="_blank"
         rel="noopener"

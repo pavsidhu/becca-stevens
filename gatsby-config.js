@@ -66,7 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `maintain.fitness`,
+        username: `beccastevensfit`,
         access_token: process.env.FACEBOOK_GRAPH_API_TOKEN,
         instagram_id: "17841431366410261",
         pagination: 6,

@@ -134,11 +134,11 @@ export default function Instagram() {
 
       <Handle>
         <a
-          href="https://instagram.com/maintain.fitness"
+          href="https://instagram.com/beccastevensfit"
           target="_blank"
           rel="noopener"
         >
-          @maintain.fitness
+          @beccastevensfit
         </a>
       </Handle>
       <Posts>

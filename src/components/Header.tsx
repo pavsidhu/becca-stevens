@@ -197,7 +197,7 @@ export default function Header() {
         <NavItemA href="mailto:becca@traintomaintain.co.uk">Contact</NavItemA>
 
         <SocialIcon
-          href="https://instagram.com/maintain.fitness"
+          href="https://instagram.com/beccastevensfit"
           aria-label="Instagram"
           target="_blank"
           rel="noopener"
