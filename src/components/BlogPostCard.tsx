@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react"
-import styled, { css } from "styled-components"
-import Img from "gatsby-image"
+import styled from "styled-components"
+import Image from "gatsby-image"
 import { Link } from "gatsby"
 
 import { colors, size } from "../styles"
@@ -65,7 +65,7 @@ const CoverImageGradient = styled.div`
   }
 `
 
-const CoverImage = styled(Img)`
+const CoverImage = styled(Image)`
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   width: 100%;
