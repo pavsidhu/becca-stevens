@@ -84,10 +84,11 @@ const Posts = styled.div`
 const PostImage = styled(Image)`
   display: block;
   width: 100%;
-  height: 100%;
+  height: 0;
+  padding-bottom: 100%;
   object-fit: cover;
   filter: brightness(0.9);
-  transition: transform 100ms ease-in-out, filter 100ms ease-in-out; box-shadow 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, filter 100ms ease-in-out;
   box-shadow: 0 0.3px 0.3px rgba(0, 0, 0, 0.028),
     0 0.7px 0.7px rgba(0, 0, 0, 0.04), 0 1.3px 1.3px rgba(0, 0, 0, 0.05),
     0 2.2px 2.2px rgba(0, 0, 0, 0.06), 0 4.2px 4.2px rgba(0, 0, 0, 0.072),
@@ -98,10 +99,6 @@ const PostImage = styled(Image)`
     &:hover {
       filter: brightness(0.95);
       transform: scale(1.02);
-      box-shadow: 0 0.3px 0.4px rgba(0, 0, 0, 0.014),
-        0 0.7px 1px rgba(0, 0, 0, 0.02), 0 1.3px 1.9px rgba(0, 0, 0, 0.025),
-        0 2.2px 3.4px rgba(0, 0, 0, 0.03), 0 4.2px 6.3px rgba(0, 0, 0, 0.036),
-        0 10px 15px rgba(0, 0, 0, 0.05);
     }
   }
 `
