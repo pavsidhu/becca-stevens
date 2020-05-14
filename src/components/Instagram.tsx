@@ -112,6 +112,8 @@ export default function Instagram() {
       allInstaNode(limit: 6, sort: { order: DESC, fields: timestamp }) {
         edges {
           node {
+            id
+            caption
             localFile {
               childImageSharp {
                 fluid {
