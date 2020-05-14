@@ -67,7 +67,7 @@ module.exports = {
       options: {
         username: `beccastevensfit`,
         access_token: process.env.FACEBOOK_GRAPH_API_TOKEN,
-        instagram_id: "17841431366410261",
+        instagram_id: "17841401583236773",
         pagination: 6,
         maxPosts: 6,
       },
