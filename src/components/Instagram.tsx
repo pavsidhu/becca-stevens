@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { Title } from "."
@@ -80,7 +81,7 @@ const Posts = styled.div`
   }
 `
 
-const PostImage = styled.img`
+const PostImage = styled(Image)`
   display: block;
   width: 100%;
   height: 100%;
@@ -106,15 +107,18 @@ const PostImage = styled.img`
 `
 
 export default function Instagram() {
-  const getInstagramPosts = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allInstaNode(limit: 6, sort: { order: DESC, fields: timestamp }) {
         edges {
           node {
-            id
-            caption
-            mediaType
-            preview
+            localFile {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
         }
       }
@@ -138,7 +142,7 @@ export default function Instagram() {
         </a>
       </Handle>
       <Posts>
-        {getInstagramPosts.allInstaNode.edges.map(({ node }) => (
+        {data.allInstaNode.edges.map(({ node }) => (
           <a
             href={`https://instagram.com/p/${node.id}`}
             target="_blank"
@@ -146,11 +150,10 @@ export default function Instagram() {
             key={node.id}
           >
             <PostImage
-              src={node.preview}
+              fluid={node.localFile.childImageSharp.fluid}
               alt={node.caption}
               loading="lazy"
-              width="100"
-              height="100"
+              draggable={false}
             />
           </a>
         ))}

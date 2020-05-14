@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from "gatsby-image"
 
 import { SEO, Title, Instagram } from "../components"
 import { colors, size } from "../styles"
@@ -30,7 +30,7 @@ const Cover = styled.div`
   filter: drop-shadow(0 2px 20px rgba(0, 0, 0, 0.1));
 `
 
-const CoverImage = styled(Img)`
+const CoverImage = styled(Image)`
   grid-row: -1 / 1;
   grid-column: -1 / 1;
   width: 100%;
