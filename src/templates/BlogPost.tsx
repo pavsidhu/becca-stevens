@@ -117,11 +117,11 @@ const Content = styled.section`
     color: ${colors.blue};
     border-bottom: 1px solid ${colors.blue};
     transition: filter 80ms;
+  }
 
-    @media (hover: hover) {
-      &:hover {
-        filter: brightness(2);
-      }
+  @media (hover: hover) {
+    p &:hover {
+      filter: brightness(2);
     }
   }
 
