@@ -89,6 +89,13 @@ module.exports = {
               maxWidth: 700,
               quality: 80,
               withWebp: true,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`,
+            options: {
+              background: "rgba(0,0,0,0.8)",
             },
           },
           {
