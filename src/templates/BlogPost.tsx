@@ -140,11 +140,11 @@ const StyledInstagram = styled(Instagram)`
 `
 
 export default function BlogPost({ data }) {
-  const { frontmatter, html } = data.markdownRemark
+  const { frontmatter, html, excerpt } = data.markdownRemark
 
   return (
     <Container>
-      <SEO title={frontmatter.title} />
+      <SEO title={frontmatter.title} description={excerpt} />
 
       <Cover>
         <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
@@ -169,6 +169,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         title
         date(formatString: "D MMMM YYYY")
