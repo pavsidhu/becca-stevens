@@ -198,12 +198,7 @@ export default function Header() {
           Blog
         </NavItemLink>
         <Divider />
-        <NavItemA
-          href="mailto:becca@traintomaintain.co.uk"
-          onClick={() => setMenuVisible(false)}
-        >
-          Contact
-        </NavItemA>
+        <NavItemA href="mailto:becca@traintomaintain.co.uk">Contact</NavItemA>
 
         <SocialIcon
           href="https://instagram.com/beccastevensfit"
