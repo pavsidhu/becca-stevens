@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React, { useState } from "react"
+import styled, { css } from "styled-components"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -7,6 +7,7 @@ import { colors, size } from "../styles"
 
 const Container = styled.article`
   height: calc(100vh - var(--header-height));
+  min-height: 400px;
   width: 100vw;
   display: grid;
   grid-template-areas: "content";
@@ -94,6 +95,16 @@ const Greeting = styled.div`
   align-items: center;
   z-index: 1;
   color: ${colors.white};
+  transition: opacity 400ms ease-in-out 300ms, transform 400ms ease-out 300ms;
+  transform: translateY(-10px);
+  opacity: 0;
+
+  ${(props: { isVisible: boolean }) =>
+    props.isVisible &&
+    css`
+      transform: translateY(0);
+      opacity: 1;
+    `};
 `
 
 const Title = styled.h1`
@@ -118,6 +129,8 @@ const Description = styled.p`
 `
 
 export default function Intro() {
+  const [loaded, setLoaded] = useState(false)
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "hero.jpg" }) {
@@ -142,11 +155,13 @@ export default function Intro() {
         alt="Becca"
         loading="eager"
         draggable={false}
+        imgStyle={{ objectPosition: "50% 10%" }}
+        onLoad={() => setLoaded(true)}
       />
 
       <Highlight />
 
-      <Greeting>
+      <Greeting isVisible={loaded}>
         <Title>Hey I'm Becca</Title>
         <Description>
           I’m a vegan Personal Trainer from Surrey, UK. I have a passion for
