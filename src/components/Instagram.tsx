@@ -68,6 +68,7 @@ const Handle = styled.h4`
 
 const Posts = styled.div`
   grid-area: content;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
