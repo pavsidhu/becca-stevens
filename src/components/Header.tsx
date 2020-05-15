@@ -190,11 +190,20 @@ export default function Header() {
       <Nav isVisible={isMenuVisible}>
         <Exit onClick={() => setMenuVisible(false)} />
 
-        <NavItemLink to="/#about">About</NavItemLink>
+        <NavItemLink to="/#about" onClick={() => setMenuVisible(false)}>
+          About
+        </NavItemLink>
         <Divider />
-        <NavItemLink to="/blog">Blog</NavItemLink>
+        <NavItemLink to="/blog" onClick={() => setMenuVisible(false)}>
+          Blog
+        </NavItemLink>
         <Divider />
-        <NavItemA href="mailto:becca@traintomaintain.co.uk">Contact</NavItemA>
+        <NavItemA
+          href="mailto:becca@traintomaintain.co.uk"
+          onClick={() => setMenuVisible(false)}
+        >
+          Contact
+        </NavItemA>
 
         <SocialIcon
           href="https://instagram.com/beccastevensfit"
