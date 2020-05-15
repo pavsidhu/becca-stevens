@@ -19,10 +19,10 @@ const Container = styled.article`
 const Cover = styled.div`
   grid-area: cover;
   grid-template-areas:
-    ". .         ."
-    ". title     ."
-    ". date      ."
-    ". .         .";
+    ". .       ."
+    ". title   ."
+    ". details ."
+    ". .       .";
   display: grid;
   grid-template-rows: 40px auto auto 40px;
   justify-items: center;
@@ -61,12 +61,26 @@ const BlogPostTitle = styled(Title)`
   }
 `
 
-const Date = styled.p`
-  grid-area: date;
+const Details = styled.p`
+  grid-area: details;
   font-size: 1.6rem;
   text-transform: uppercase;
   color: ${colors.white};
   z-index: 1;
+  text-align: center;
+`
+
+const DetailsDivider = styled.span`
+  display: block;
+  color: transparent;
+  font-size: 0.5rem;
+
+  @media (min-width: ${size.medium}) {
+    display: inline;
+    padding: 0 8px;
+    font-size: inherit;
+    color: ${colors.white};
+  }
 `
 
 const Content = styled.section`
@@ -140,7 +154,7 @@ const StyledInstagram = styled(Instagram)`
 `
 
 export default function BlogPost({ data }) {
-  const { frontmatter, html, excerpt } = data.markdownRemark
+  const { frontmatter, html, excerpt, timeToRead } = data.markdownRemark
 
   return (
     <Container>
@@ -148,7 +162,10 @@ export default function BlogPost({ data }) {
 
       <Cover>
         <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
-        <Date>{frontmatter.date}</Date>
+        <Details>
+          {frontmatter.date} <DetailsDivider>•</DetailsDivider> {timeToRead}{" "}
+          Minute Read
+        </Details>
 
         <CoverRectangle />
         <CoverImage
@@ -170,6 +187,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt(pruneLength: 160)
+      timeToRead
       frontmatter {
         title
         date(formatString: "D MMMM YYYY")
