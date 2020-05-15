@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Image from "gatsby-image"
 
-import { colors, size } from "../styles"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Container = styled.article`
@@ -19,7 +18,7 @@ const Container = styled.article`
   align-items: center;
   gap: 24px;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     grid-template-areas:
       ".     .     .     .        ."
       ".     photo .     subtitle ."
@@ -37,7 +36,7 @@ const Container = styled.article`
 `
 
 const Background = styled.div`
-  background: ${colors.pink};
+  background: var(--pink);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -45,7 +44,7 @@ const Background = styled.div`
   grid-column: 1 / -1;
   clip-path: polygon(0 80px, 0 100%, 100% calc(100% - 80px), 100% 0);
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     clip-path: polygon(0 200px, 0 100%, 100% calc(100% - 200px), 100% 0);
   }
 `
@@ -65,7 +64,7 @@ const Subtitle = styled.h3`
   letter-spacing: 0.4rem;
   font-size: 2.2rem;
   font-weight: 300;
-  color: ${colors.black};
+  color: var(--black);
 `
 
 const Desc = styled.div`
@@ -75,7 +74,7 @@ const Desc = styled.div`
 const P = styled.p`
   font-size: 1.4rem;
   line-height: 2.4rem;
-  color: ${colors.black};
+  color: var(--black);
 
   &:not(:last-child) {
     margin-bottom: 24px;

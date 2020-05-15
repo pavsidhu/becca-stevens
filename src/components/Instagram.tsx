@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { Title } from "."
-import { colors, size } from "../styles"
 import InstagramIcon from "../images/icons/instagram.svg"
 
 const Container = styled.article`
@@ -22,7 +21,7 @@ const Container = styled.article`
   grid-template-rows: 24px auto 8px auto 24px auto 24px;
   grid-template-columns: 24px 1fr 24px;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     justify-items: initial;
     grid-template-rows: 64px auto 16px auto 24px;
     grid-template-columns: 24px 1fr 1fr 24px;
@@ -51,17 +50,17 @@ const Handle = styled.h4`
   letter-spacing: 0.2rem;
   font-size: 2rem;
   font-weight: 300;
-  color: ${colors.blue};
+  color: var(--blue);
   user-select: none;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     justify-self: end;
   }
 
   @media (hover: hover) {
     &:hover {
       -webkit-text-stroke-width: 0.5px;
-      -webkit-text-stroke-color: ${colors.blue};
+      -webkit-text-stroke-color: var(--blue);
     }
   }
 `
@@ -77,7 +76,7 @@ const Posts = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     grid-template-columns: repeat(6, 1fr);
   }
 `

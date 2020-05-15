@@ -3,8 +3,6 @@ import styled from "styled-components"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 
-import { colors, size } from "../styles"
-
 const Container = styled(Link)`
   width: 100%;
   height: 100%;
@@ -35,7 +33,7 @@ const Container = styled(Link)`
     }
   }
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     /* Fix no right padding due to overflow of parent */
     &:last-child {
       position: relative;
@@ -76,7 +74,7 @@ const Date = styled.p`
   text-transform: uppercase;
   text-align: center;
   font-size: 1.4rem;
-  color: ${colors.white};
+  color: var(--white);
   margin-bottom: 8px;
   z-index: 2;
 `
@@ -85,7 +83,7 @@ const Title = styled.p`
   grid-area: title;
   text-align: center;
   font-size: 1.6rem;
-  color: ${colors.white};
+  color: var(--white);
   z-index: 2;
 `
 

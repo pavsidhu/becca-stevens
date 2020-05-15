@@ -1,13 +1,11 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { colors } from "../styles"
-
 const Button = styled(Link)`
   padding: 16px 32px;
-  border: 1px solid ${colors.blue};
+  border: 1px solid var(--blue);
   border-radius: 2px;
-  color: ${colors.blue};
+  color: var(--blue);
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
@@ -17,8 +15,8 @@ const Button = styled(Link)`
 
   @media (hover: hover) {
     &:hover {
-      background-color: ${colors.blue};
-      color: ${colors.white};
+      background-color: var(--blue);
+      color: var(--white);
     }
   }
 `

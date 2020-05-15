@@ -3,8 +3,6 @@ import styled, { css } from "styled-components"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { colors, size } from "../styles"
-
 const Container = styled.article`
   height: calc(100vh - var(--header-height));
   min-height: 400px;
@@ -24,7 +22,7 @@ const Photo = styled(Image)`
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
   user-select: none;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     clip-path: polygon(0 0, 70% 0, 100% 100%, 30% 100%);
   }
 `
@@ -36,7 +34,7 @@ const Highlight = styled.div`
   opacity: 0.1;
   clip-path: polygon(0 25%, 62.5% 9.4%, 100% 15%, 100% 75%, 37.5% 90.6%, 0 85%);
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     clip-path: polygon(
       16.1% 53.7%,
       40% 0%,
@@ -54,7 +52,7 @@ const Triangles = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     width: 100%;
     flex-direction: row;
   }
@@ -63,10 +61,10 @@ const Triangles = styled.div`
 const TriangleStart = styled.div`
   justify-self: start;
   height: 50%;
-  background: ${colors.pink};
+  background: var(--pink);
   clip-path: polygon(100% 0, 0 50%, 100% 100%);
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     width: 50%;
     height: 100%;
     clip-path: polygon(0 0, 0 90%, 80% 0);
@@ -76,10 +74,10 @@ const TriangleStart = styled.div`
 const TriangleEnd = styled.div`
   justify-self: end;
   height: 50%;
-  background: ${colors.pink};
+  background: var(--pink);
   clip-path: polygon(0 0, 0 100%, 100% 50%);
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     width: 50%;
     height: 100%;
     clip-path: polygon(20% 100%, 100% 10%, 100% 100%);
@@ -94,7 +92,7 @@ const Greeting = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  color: ${colors.white};
+  color: var(--white);
   transition: opacity 400ms ease-in-out 300ms, transform 400ms ease-out 300ms;
   transform: translateY(-10px);
   opacity: 0;
@@ -116,7 +114,7 @@ const Title = styled.h1`
   font-weight: 300;
   color: white;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     font-size: 4.8rem;
   }
 `

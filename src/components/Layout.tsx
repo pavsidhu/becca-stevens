@@ -4,7 +4,6 @@ import styled, { createGlobalStyle } from "styled-components"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 import { Footer, Header } from "."
-import { colors } from "../styles"
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -14,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: ${colors.black}
+    color: var(--black)
   }
 
   html {
@@ -32,6 +31,15 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --header-height: 96px;
+
+    --black: #252224;
+    --grey: #585557;
+    --white: #ffffff;
+    --pink: #CA8080;
+    --light-pink: #e6a5a5;
+    --blue: #41596d;
+
+    --max-content-width: 1200px;
   }
 
   @media (prefers-reduced-motion: reduce) {

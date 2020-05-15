@@ -7,7 +7,6 @@ import BlogPostCard from "./BlogPostCard"
 import Button from "./Button"
 import LeftArrowIcon from "../images/icons/left-arrow.svg"
 import RightArrowIcon from "../images/icons/right-arrow.svg"
-import { size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -22,7 +21,7 @@ const Container = styled.article`
   grid-template-rows: 64px auto 32px auto 24px auto 64px;
   grid-template-columns: 24px 1fr 24px;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     grid-template-areas:
       ".          .        .          "
       "title      title    title      "
@@ -58,7 +57,7 @@ const BlogPostList = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     /* Show all available blog posts */
     & *:nth-child(n + 4) {
       display: grid;
@@ -85,7 +84,7 @@ const arrow = css`
   display: none;
   transition: transform 100ms;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     display: block;
     width: 32px;
     height: 64px;
@@ -96,8 +95,8 @@ const arrow = css`
 
 const LeftArrow = styled(LeftArrowIcon)`
   ${arrow}
-  
-  @media (min-width: ${size.medium}) {
+
+  @media (min-width: 800px) {
     grid-area: left-arrow;
     justify-self: end;
   }
@@ -112,11 +111,11 @@ const LeftArrow = styled(LeftArrowIcon)`
 const RightArrow = styled(RightArrowIcon)`
   ${arrow}
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     grid-area: right-arrow;
     justify-self: start;
   }
-  
+
   @media (hover: hover) {
     &:hover {
       transform: translateX(5px);

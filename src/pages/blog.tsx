@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 
 import { SEO, Title, BlogPostCard } from "../components"
-import { size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -17,7 +16,7 @@ const Container = styled.article`
   grid-template-columns: 24px 1fr 24px;
   grid-template-rows: 32px auto 32px auto 24px;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     grid-template-rows: 48px auto 48px auto 24px;
   }
 `
@@ -38,7 +37,7 @@ const BlogPostList = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     grid-template-columns: repeat(3, 1fr);
   }
 `

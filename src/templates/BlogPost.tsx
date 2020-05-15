@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { SEO, Title, Instagram } from "../components"
-import { colors, size } from "../styles"
 
 const Container = styled.article`
   display: grid;
@@ -44,19 +43,19 @@ const CoverRectangle = styled.div`
   height: 100%;
   width: 100%;
   clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
-  background: ${colors.pink};
+  background: var(--pink);
 `
 
 const BlogPostTitle = styled(Title)`
   grid-area: title;
-  color: ${colors.white};
+  color: var(--white);
   align-self: end;
   font-size: 2.4rem;
   letter-spacing: 0.4rem;
   z-index: 1;
   max-width: 700px;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     font-size: 3.2rem;
   }
 `
@@ -65,7 +64,7 @@ const Details = styled.p`
   grid-area: details;
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: ${colors.white};
+  color: var(--white);
   z-index: 1;
   text-align: center;
 `
@@ -75,11 +74,11 @@ const DetailsDivider = styled.span`
   color: transparent;
   font-size: 0.5rem;
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     display: inline;
     padding: 0 8px;
     font-size: inherit;
-    color: ${colors.white};
+    color: var(--white);
   }
 `
 
@@ -93,7 +92,7 @@ const Content = styled.section`
   word-break: break-word;
 
   * {
-    color: ${colors.black};
+    color: var(--black);
     max-width: 700px;
     width: 100%;
   }
@@ -102,7 +101,7 @@ const Content = styled.section`
     padding: 0 24px;
   }
 
-  @media (min-width: ${size.medium}) {
+  @media (min-width: 800px) {
     > :not(img):not(video) {
       padding: initial;
     }
@@ -128,8 +127,8 @@ const Content = styled.section`
   }
 
   a {
-    color: ${colors.blue};
-    border-bottom: 1px solid ${colors.blue};
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
     transition: filter 80ms;
   }
 
