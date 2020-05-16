@@ -34,7 +34,7 @@ const BlogPostList = styled.div`
   gap: 24px;
   grid-auto-rows: min(60vw, 400px);
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 `
 
 export default function Blog({ data }: { data: GetBlogPosts }) {
