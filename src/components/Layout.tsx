@@ -77,12 +77,10 @@ const Content = styled.div`
   &.enter-active,
   &.exit {
     opacity: 1;
-    transform: translateY(0);
   }
 
   &.exit-active {
     opacity: 0;
-    transform: translateY(5vh);
   }
 `
 
