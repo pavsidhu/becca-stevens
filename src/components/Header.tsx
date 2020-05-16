@@ -48,7 +48,8 @@ const Menu = styled(MenuIcon)`
   width: 32px;
   height: 32px;
   fill: var(--black);
-
+  cursor: pointer;
+  
   @media (min-width: 800px) {
     display: none;
   }
@@ -96,6 +97,7 @@ const Exit = styled(ExitIcon)`
   width: 32px;
   height: 32px;
   fill: var(--black);
+  cursor: pointer;
 
   @media (min-width: 800px) {
     display: none;
