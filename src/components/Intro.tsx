@@ -152,9 +152,8 @@ export default function Intro() {
       <Photo
         fluid={data.file.childImageSharp.fluid}
         alt="Becca"
-        loading="eager"
         draggable={false}
-        imgStyle={{ objectPosition: "50% 10%" }}
+        imgStyle={{ objectPosition: "50% 10%", color: "transparent" }}
         onLoad={() => setLoaded(true)}
       />
 

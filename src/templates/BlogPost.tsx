@@ -168,6 +168,7 @@ export default function BlogPost({ data }) {
             fluid={frontmatter.coverImage.childImageSharp.fluid}
             alt={frontmatter.coverImageAlt}
             draggable={false}
+            imgStyle={{ color: "transparent" }}
           />
         </Cover>
 
