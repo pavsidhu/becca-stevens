@@ -44,6 +44,8 @@ const TitleContainer = styled.div`
 
 const InstagramTitle = styled(Title)`
   margin-left: 16px;
+  text-align: left;
+  font-size: 2.6rem;
 `
 
 const Handle = styled.h4`
