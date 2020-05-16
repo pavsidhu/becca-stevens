@@ -30,8 +30,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --header-height: 96px;
-
     --black: #252224;
     --grey: #585557;
     --white: #ffffff;
@@ -39,7 +37,8 @@ const GlobalStyle = createGlobalStyle`
     --light-pink: #e6a5a5;
     --blue: #41596d;
 
-    --max-content-width: 1200px;
+    --header-height: 96px;
+    --max-content-width: 2000px;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -87,6 +86,13 @@ const Content = styled.div`
   }
 `
 
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+`
+
 export default function Layout({ children, location }) {
   return (
     <>
@@ -111,7 +117,7 @@ export default function Layout({ children, location }) {
           }}
         >
           <Content>
-            <main>{children}</main>
+            <Main>{children}</Main>
             <Footer />
           </Content>
         </CSSTransition>

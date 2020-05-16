@@ -9,10 +9,10 @@ const Container = styled.article`
   display: grid;
   grid-template-areas:
     "cover    "
-    "content  "
-    "instagram";
-  grid-template-rows: minmax(50vh, 400px) auto auto;
+    "content  ";
+  grid-template-rows: minmax(50vh, 400px) auto;
   row-gap: 24px;
+  width: 100%;
 `
 
 const Cover = styled.div`
@@ -148,36 +148,33 @@ const Content = styled.section`
   }
 `
 
-const StyledInstagram = styled(Instagram)`
-  grid-area: instagram;
-`
-
 export default function BlogPost({ data }) {
   const { frontmatter, html, excerpt, timeToRead } = data.markdownRemark
 
   return (
-    <Container>
-      <SEO title={frontmatter.title} description={excerpt} />
+    <>
+      <Container>
+        <SEO title={frontmatter.title} description={excerpt} />
 
-      <Cover>
-        <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
-        <Details>
-          {frontmatter.date} <DetailsDivider>•</DetailsDivider> {timeToRead}{" "}
-          Minute Read
-        </Details>
+        <Cover>
+          <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
+          <Details>
+            {frontmatter.date} <DetailsDivider>•</DetailsDivider> {timeToRead}{" "}
+            Minute Read
+          </Details>
 
-        <CoverRectangle />
-        <CoverImage
-          fluid={frontmatter.coverImage.childImageSharp.fluid}
-          alt={frontmatter.coverImageAlt}
-          draggable={false}
-        />
-      </Cover>
+          <CoverRectangle />
+          <CoverImage
+            fluid={frontmatter.coverImage.childImageSharp.fluid}
+            alt={frontmatter.coverImageAlt}
+            draggable={false}
+          />
+        </Cover>
 
-      <Content dangerouslySetInnerHTML={{ __html: html }} />
-
-      <StyledInstagram />
-    </Container>
+        <Content dangerouslySetInnerHTML={{ __html: html }} />
+      </Container>
+      <Instagram />
+    </>
   )
 }
 

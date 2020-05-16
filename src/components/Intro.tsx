@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from "gatsby"
 const Container = styled.article`
   height: calc(100vh - var(--header-height));
   min-height: 400px;
+  max-height: 1500px;
   width: 100vw;
   display: grid;
   grid-template-areas: "content";

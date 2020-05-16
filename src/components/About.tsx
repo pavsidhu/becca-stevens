@@ -16,6 +16,7 @@ const Container = styled.article`
   grid-template-columns: 1fr minmax(auto, 70ch) 1fr;
   justify-items: center;
   align-items: center;
+  width: 100%;
   gap: 24px;
 
   @media (min-width: 800px) {

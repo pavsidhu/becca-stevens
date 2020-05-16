@@ -20,6 +20,8 @@ const Container = styled.article`
   justify-items: center;
   grid-template-rows: 24px auto 8px auto 24px auto 24px;
   grid-template-columns: 24px 1fr 24px;
+  max-width: var(--max-content-width);
+  width: 100%;
 
   @media (min-width: 800px) {
     justify-items: initial;

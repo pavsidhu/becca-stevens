@@ -15,9 +15,12 @@ const Container = styled.article`
     ". .     .";
   grid-template-columns: 24px 1fr 24px;
   grid-template-rows: 32px auto 32px auto 24px;
+  max-width: var(--max-content-width);
+  width: 100%;
 
   @media (min-width: 800px) {
     grid-template-rows: 48px auto 48px auto 24px;
+    grid-template-columns: 64px 1fr 64px;
   }
 `
 
@@ -28,18 +31,10 @@ const BlogTitle = styled(Title)`
 const BlogPostList = styled.div`
   grid-area: posts;
   display: grid;
-  row-gap: 24px;
+  gap: 24px;
   grid-auto-rows: min(60vw, 400px);
-
-  @media (min-width: 550px) {
-    gap: 24px;
-    grid-auto-rows: min(60vw, 300px);
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 800px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 `
 
 export default function Blog({ data }: { data: GetBlogPosts }) {
@@ -50,6 +45,12 @@ export default function Blog({ data }: { data: GetBlogPosts }) {
       <BlogTitle>Blog</BlogTitle>
 
       <BlogPostList>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <BlogPostCard post={node} key={node.id} />
+        ))}
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <BlogPostCard post={node} key={node.id} />
+        ))}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <BlogPostCard post={node} key={node.id} />
         ))}
