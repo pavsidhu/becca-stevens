@@ -103,6 +103,7 @@ export default function About() {
         fluid={data.file.childImageSharp.fluid}
         alt="Becca"
         draggable={false}
+        style={{ overflow: "visible" }}
       />
 
       <Subtitle>
