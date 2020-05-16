@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Maintain Fitness`,
+        short_name: `Maintain Fitness`,
         start_url: `/`,
         background_color: `#CA8080`,
         theme_color: `#CA8080`,
