@@ -30,18 +30,21 @@ const Cover = styled.div`
 `
 
 const CoverImage = styled(Image)`
-  grid-row: -1 / 1;
-  grid-column: -1 / 1;
+  grid-row: 1 / 5;
+  grid-column: 1 / 4;
   width: 100%;
+  overflow: hidden;
+  z-index: 0;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
   filter: brightness(0.6);
 `
 
 const CoverRectangle = styled.div`
-  grid-row: -1 / 1;
-  grid-column: -1 / 1;
+  grid-row: 1 / 5;
+  grid-column: 1 / 4;
   height: 100%;
   width: 100%;
+  z-index: -2;
   clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
   background: var(--pink);
 `
@@ -52,8 +55,11 @@ const BlogPostTitle = styled(Title)`
   align-self: end;
   font-size: 2.4rem;
   letter-spacing: 0.4rem;
-  z-index: 1;
+  z-index: 2;
   max-width: 700px;
+
+  /* Fixes Edge where cover image displays over text */
+  position: relative;
 
   @media (min-width: 800px) {
     font-size: 3.2rem;
@@ -67,6 +73,9 @@ const Details = styled.p`
   color: var(--white);
   z-index: 1;
   text-align: center;
+
+  /* Fixes Edge where cover image displays over text */
+  position: relative;
 `
 
 const DetailsDivider = styled.span`
@@ -163,13 +172,13 @@ export default function BlogPost({ data }) {
             Minute Read
           </Details>
 
-          <CoverRectangle />
           <CoverImage
             fluid={frontmatter.coverImage.childImageSharp.fluid}
             alt={frontmatter.coverImageAlt}
             draggable={false}
             imgStyle={{ color: "transparent" }}
           />
+          <CoverRectangle />
         </Cover>
 
         <Content dangerouslySetInnerHTML={{ __html: html }} />
