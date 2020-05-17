@@ -84,8 +84,17 @@ const Posts = styled.div`
   }
 `
 
+const PostLink = styled.a`
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+`
+
 const PostImage = styled.img`
-  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -138,7 +147,7 @@ export default function Instagram() {
       </Handle>
       <Posts>
         {data.allInstaNode.edges.map(({ node }) => (
-          <a
+          <PostLink
             href={`https://instagram.com/p/${node.id}`}
             target="_blank"
             rel="noopener"
@@ -151,7 +160,7 @@ export default function Instagram() {
               width="100"
               height="100"
             />
-          </a>
+          </PostLink>
         ))}
       </Posts>
     </Container>
