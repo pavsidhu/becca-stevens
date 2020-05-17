@@ -24,15 +24,15 @@ const Container = styled.article`
 
   @media (min-width: 800px) {
     grid-template-areas:
-      ".          .        .          "
-      "title      title    title      "
-      ".          .        .          "
-      "left-arrow posts    right-arrow"
-      ".          .        .          "
-      "see-more   see-more see-more   "
-      ".          .        .          ";
+      ".       "
+      "title   "
+      ".       "
+      "posts   "
+      ".       "
+      "see-more"
+      ".       ";
     grid-template-rows: 96px auto 32px auto 32px auto 96px;
-    grid-template-columns: 64px 1fr 64px;
+    grid-template-columns: 1fr;
     align-items: center;
   }
 `
@@ -53,7 +53,6 @@ const BlogPostList = styled.div`
   gap: 24px;
 
   @media (min-width: 550px) {
-    grid-column: 2 / 3;
     grid-template-rows: repeat(2, min(60vw, 300px));
     grid-template-columns: repeat(2, 1fr);
   }
@@ -65,7 +64,7 @@ const BlogPostList = styled.div`
     }
 
     grid-column: 1 / 5;
-    padding: 0 16px;
+    padding: 0 12px;
     grid-template-rows: repeat(1, 400px);
     grid-template-columns: repeat(8, calc(24vw - 16px));
     gap: 16px;
@@ -82,25 +81,26 @@ const BlogPostList = styled.div`
 `
 
 const arrow = css`
-  display: none;
+  grid-area: posts;
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  border-radius: 50%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
   transition: transform 100ms;
+  cursor: pointer;
+  display: none;
 
   @media (min-width: 800px) {
     display: block;
-    width: 32px;
-    height: 64px;
-    z-index: 2;
-    cursor: pointer;
   }
 `
 
 const LeftArrow = styled(LeftArrowIcon)`
   ${arrow}
-
-  @media (min-width: 800px) {
-    grid-area: left-arrow;
-    justify-self: end;
-  }
+  justify-self: start;
+  margin-left: 20px;
 
   @media (hover: hover) {
     &:hover {
@@ -111,11 +111,8 @@ const LeftArrow = styled(LeftArrowIcon)`
 
 const RightArrow = styled(RightArrowIcon)`
   ${arrow}
-
-  @media (min-width: 800px) {
-    grid-area: right-arrow;
-    justify-self: start;
-  }
+  justify-self: end;
+  margin-right: 20px;
 
   @media (hover: hover) {
     &:hover {
