@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 import { Title } from "."
@@ -85,7 +84,7 @@ const Posts = styled.div`
   }
 `
 
-const PostImage = styled(Image)`
+const PostImage = styled.img`
   display: block;
   width: 100%;
   height: 0;
@@ -115,13 +114,7 @@ export default function Instagram() {
           node {
             id
             caption
-            localFile {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
+            preview
           }
         }
       }
@@ -153,10 +146,11 @@ export default function Instagram() {
             key={node.id}
           >
             <PostImage
-              fluid={node.localFile.childImageSharp.fluid}
+              src={node.preview}
               alt={node.caption}
               loading="lazy"
-              draggable={false}
+              width="100"
+              height="100"
             />
           </a>
         ))}

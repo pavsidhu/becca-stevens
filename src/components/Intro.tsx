@@ -19,6 +19,8 @@ const Container = styled.article`
 const Photo = styled(Image)`
   grid-area: content;
   height: 100%;
+  width: 100vw;
+  max-height: calc(100vh - var(--header-height));
   filter: brightness(0.6);
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
   user-select: none;
@@ -54,7 +56,7 @@ const Triangles = styled.div`
   flex-direction: column;
 
   @media (min-width: 800px) {
-    width: 100%;
+    width: 100vw;
     flex-direction: row;
   }
 `
