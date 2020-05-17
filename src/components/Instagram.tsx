@@ -87,8 +87,7 @@ const Posts = styled.div`
 const PostImage = styled.img`
   display: block;
   width: 100%;
-  height: 0;
-  padding-bottom: 100%;
+  height: 100%;
   object-fit: cover;
   filter: brightness(0.9);
   transition: transform 100ms ease-in-out, filter 100ms ease-in-out;
