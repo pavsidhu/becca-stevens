@@ -7,7 +7,7 @@ const Container = styled.article`
   height: calc(100vh - var(--header-height));
   min-height: 400px;
   max-height: 1500px;
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-areas: "content";
   grid-template-columns: 1fr;
@@ -19,7 +19,7 @@ const Container = styled.article`
 const Photo = styled(Image)`
   grid-area: content;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   max-height: calc(100vh - var(--header-height));
   filter: brightness(0.6);
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
@@ -56,7 +56,7 @@ const Triangles = styled.div`
   flex-direction: column;
 
   @media (min-width: 800px) {
-    width: 100vw;
+    width: 100%;
     flex-direction: row;
   }
 `
