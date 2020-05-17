@@ -4,6 +4,7 @@ date: 2020-05-07T13:45:20.588Z
 coverImage: ../../static/images/0_u989lmvumxjkyo5l.jpeg
 coverImageAlt: School children running around in a field
 ---
+
 Although I love to exercise and stay active now, when I think back to school Physical Education (PE), it traumatizes me. I remember being the last one to be picked for a team sport, the overwhelming competitiveness, being forced to wear shorts and a t-shirt in all weathers and a considerable lack of different sports options. If anything, all that PE did was give me a hatred for sport. And, I’m not an exception.
 
 The Women's Health and Fitness Association found that over half of secondary school girls say that they have been put off sport through their experiences I school PE. The teachers’ preference for talented individuals was clearly evident and a strong deterrence for the less sporty or non-mainstream sport orientated individuals.
@@ -30,7 +31,7 @@ More often than not, the choices that children are given are often limited to ve
 
 ## Funding
 
-Although I appreciate that many schools lack the facilities to provide lots of options, the government should ensure that there are at least a few options within each school, through increased funding. By putting more funding into PE, it will have a positive impact in the future. More people will be staying healthy and keeping fit, putting less strain on the NHS. Furthermore, children who are involved in sports and enjoying sports and more likely to pursue this outside of school and so less likely to be involved in[antisocial behaviours](https://repository.cardiffmet.ac.uk/handle/10369/6985). Both the NHS and antisocial behaviours cost the taxpayer a large amount of money. Through spending this money on increasing the quality of school PE and health education, there will be reduced cost later on in their lives.
+Although I appreciate that many schools lack the facilities to provide lots of options, the government should ensure that there are at least a few options within each school, through increased funding. By putting more funding into PE, it will have a positive impact in the future. More people will be staying healthy and keeping fit, putting less strain on the NHS. Furthermore, children who are involved in sports and enjoying sports and more likely to pursue this outside of school and so less likely to be involved in [antisocial behaviours](https://repository.cardiffmet.ac.uk/handle/10369/6985). Both the NHS and antisocial behaviours cost the taxpayer a large amount of money. Through spending this money on increasing the quality of school PE and health education, there will be reduced cost later on in their lives.
 
 ![](../../static/images/0_y77wrkqweo3l8sva.jpeg)
 

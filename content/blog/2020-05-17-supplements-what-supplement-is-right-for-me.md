@@ -4,6 +4,7 @@ date: 2020-05-12T13:38:43.464Z
 coverImage: ../../static/images/0_b0djwzxvzs4f0awa.jpeg
 coverImageAlt: Protein powders
 ---
+
 All over the internet, various sources will recommend all kinds of supplements to ‘supposedly’ improve your athletic performance or help you lose weight. From deer antler velvet to beetroot juice, every site will swear by different products. With so much incorrect information online and so many companies trying to sell the latest fad, how can you know which supplements will be worth your money? I’ve summarised some current research (references at the bottom) and picked the 3 best, research-backed supplements.
 
 ## Protein
@@ -20,7 +21,7 @@ Everyone! All people need protein and, even if you're not exercising, muscles wi
 
 ### **How much to take?**
 
-For the average person, 0.8g/kg of body mass is perfectly adequate. For strength and endurance athletes, 1.3–1.8g/kg of body mass is more suitable. This is because due to the amount and intensity of training, more muscle is broken down and so more protein is required to repair this and grow more. Most protein powders come with a scoop measurement and the average serving provides 20–25g protein. Alternatively, you can definitely get all the protein that you need through your diet. As a vegan, I get a lot of protein from beans, lentils, chickpea flour,[seitan](https://www.thebuddhistchef.com/recipe/seitan/)and soy (ie tofu).
+For the average person, 0.8g/kg of body mass is perfectly adequate. For strength and endurance athletes, 1.3–1.8g/kg of body mass is more suitable. This is because due to the amount and intensity of training, more muscle is broken down and so more protein is required to repair this and grow more. Most protein powders come with a scoop measurement and the average serving provides 20–25g protein. Alternatively, you can definitely get all the protein that you need through your diet. As a vegan, I get a lot of protein from beans, lentils, chickpea flour, [seitan](https://www.thebuddhistchef.com/recipe/seitan/) and soy (ie tofu).
 
 ## Creatine
 
@@ -38,11 +39,11 @@ Creatine is ideal for anyone participating in high intensity, intermittent activ
 
 ### **Suggestions for how it works:**
 
-* It maintains the phosphocreatine stores in the body so that ATP (a molecule that releases energy) can be generated during intense exercise
-* Speeds up the process of phosphocreatine being re-made after exercise.
-* Slows down the process of certain protein builders breaking down (adenine nucleotides)
-* Slows down the lactate build-up (slows the muscle burn)
-* Enhances glycogen storage in muscles (more energy for movement)
+- It maintains the phosphocreatine stores in the body so that ATP (a molecule that releases energy) can be generated during intense exercise
+- Speeds up the process of phosphocreatine being re-made after exercise.
+- Slows down the process of certain protein builders breaking down (adenine nucleotides)
+- Slows down the lactate build-up (slows the muscle burn)
+- Enhances glycogen storage in muscles (more energy for movement)
 
 Creatine has the support of multiple clinical trials, supporting its use as a sports supplement.
 
@@ -68,7 +69,7 @@ It wakes you up, making you less physically and mentally tired. It has also been
 
 Thanks for reading my article!
 
-Check out my Instagram[@ beccastevens98](https://www.instagram.com/beccastevens98/)or send me an email becca@traintomaintain.co.uk.
+Check out my Instagram [@beccastevens98](https://www.instagram.com/beccastevens98/) or send me an email becca@traintomaintain.co.uk.
 
 ### References:
 
