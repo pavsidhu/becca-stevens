@@ -67,6 +67,7 @@ const CoverImage = styled(Image)`
   grid-row: 1 / -1;
   grid-column: 1 / -1;
   width: 100%;
+  z-index: -1;
 `
 
 const Date = styled.p`
