@@ -4,6 +4,8 @@
 
 > Train to Maintain 🏋🏼‍♀️
 
+![Website preview](preview.png)
+
 ## License
 
-GNU GPLv3 © [Maintain Fitness](https://traintomaintain.co.uk)
+GPL-3.0 © [Maintain Fitness](https://traintomaintain.co.uk)
