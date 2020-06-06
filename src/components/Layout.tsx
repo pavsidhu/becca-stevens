@@ -100,7 +100,10 @@ export default function Layout({ children, location }) {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=fallback"
           rel="stylesheet"
         />
-        <meta name="google-site-verification" content="bJO56L4GLEerOdLz-75WtyqngZHaaQePu2tImK2-nnc" />
+        <meta
+          name="google-site-verification"
+          content="bJO59L4GLEerOdLz-75WtyqngZHaaQePu2tImK2-nnc"
+        />
       </Helmet>
 
       <Header />
