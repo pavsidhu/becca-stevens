@@ -2,8 +2,8 @@ import React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+function SEO({ description, lang, meta, title, image }) {
+  const { site, file } = useStaticQuery(
     graphql`
       query {
         site {
@@ -11,7 +11,11 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
+        }
+        file(relativePath: { eq: "hero.jpg" }) {
+          publicURL
         }
       }
     `
@@ -21,9 +25,7 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
@@ -40,12 +42,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata.siteUrl + (image ? image : file.publicURL),
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -59,6 +65,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: `twitter:image`,
+          content: site.siteMetadata.siteUrl + (image ? image : file.publicURL),
+        },
       ].concat(meta)}
     />
   )
@@ -68,6 +78,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: undefined,
 }
 
 export default SEO
