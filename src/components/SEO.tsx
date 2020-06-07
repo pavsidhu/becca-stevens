@@ -15,13 +15,18 @@ function SEO({ description, lang, meta, title, image }) {
           }
         }
         file(relativePath: { eq: "hero.jpg" }) {
-          publicURL
+          childImageSharp {
+            resize(width: 1200) {
+              src
+            }
+          }
         }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const defaultImage = file.childImageSharp.resize.src
 
   return (
     <Helmet
@@ -43,7 +48,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.siteUrl + (image ? image : file.publicURL),
+          content: site.siteMetadata.siteUrl + (image ? image : defaultImage),
         },
         {
           property: `og:type`,
@@ -67,7 +72,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `twitter:image`,
-          content: site.siteMetadata.siteUrl + (image ? image : file.publicURL),
+          content: site.siteMetadata.siteUrl + (image ? image : defaultImage),
         },
       ].concat(meta)}
     />

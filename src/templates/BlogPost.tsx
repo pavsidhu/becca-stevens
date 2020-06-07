@@ -163,7 +163,11 @@ export default function BlogPost({ data }) {
   return (
     <>
       <Container>
-        <SEO title={frontmatter.title} description={excerpt} />
+        <SEO
+          title={frontmatter.title}
+          description={excerpt}
+          image={frontmatter.coverImage.childImageSharp.resize.src}
+        />
 
         <Cover>
           <BlogPostTitle>{frontmatter.title}</BlogPostTitle>
@@ -201,6 +205,9 @@ export const query = graphql`
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid_withWebp
+            }
+            resize(width: 1200) {
+              src
             }
           }
         }
