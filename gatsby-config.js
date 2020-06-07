@@ -4,7 +4,8 @@ module.exports = {
   siteMetadata: {
     title: `Maintain Fitness`,
     description: `Hey I'm Becca, I’m a vegan Personal Trainer from Surrey, UK. I have a passion for functional fitness, healthy food and being outdoors.`,
-    author: `@pavsidhu`,
+    author: `@Becca_Stevens98`,
+    siteUrl: `https://traintomaintain.co.uk`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
