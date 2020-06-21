@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://traintomaintain.co.uk`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-typescript`,
