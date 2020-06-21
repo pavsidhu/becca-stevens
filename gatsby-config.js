@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Maintain Fitness`,
     description: `Hey I'm Becca, I’m a vegan Personal Trainer from Surrey, UK. I have a passion for functional fitness, healthy food and being outdoors.`,
-    author: `@Becca_Stevens98`,
+    author: `Becca Stevens <becca@traintomaintain.co.uk>`,
     siteUrl: `https://traintomaintain.co.uk`,
   },
   plugins: [
