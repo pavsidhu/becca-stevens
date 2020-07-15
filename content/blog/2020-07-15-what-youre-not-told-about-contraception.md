@@ -1,5 +1,5 @@
 ---
-title: "What you're not told about contraception. "
+title: "What You're Not Told About Contraception. "
 date: 2020-07-15T15:58:37.917Z
 coverImage: ../../static/images/reproductive-health-supplies-coalition-bymicwlq-e4-unsplash.jpg
 coverImageAlt: Contraceptive pill packet
