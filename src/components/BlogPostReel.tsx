@@ -126,23 +126,21 @@ const SeeMoreButton = styled(Button)`
   justify-self: center;
 `
 
+enum Direction {
+  LEFT,
+  RIGHT,
+}
+
 export default function BlogPosts() {
   const blogPostListRef = useRef<HTMLDivElement>()
-  const blogPostCardRef = useRef<typeof Link>()
 
-  function nextPost() {
-    if (blogPostListRef.current && blogPostCardRef.current) {
-      blogPostListRef.current.scrollBy({
-        left: blogPostCardRef.current.clientWidth,
-        behavior: "smooth",
-      })
-    }
-  }
+  function scroll(direction: Direction) {
+    if (blogPostListRef.current) {
+      const { children } = blogPostListRef.current
+      const multiplier = direction === Direction.LEFT ? -1 : 1
 
-  function previousPost() {
-    if (blogPostListRef.current && blogPostCardRef.current) {
       blogPostListRef.current.scrollBy({
-        left: -blogPostCardRef.current.clientWidth,
+        left: multiplier * children[0].clientWidth,
         behavior: "smooth",
       })
     }
@@ -184,12 +182,12 @@ export default function BlogPosts() {
 
       <BlogPostList ref={blogPostListRef}>
         {getBlogPosts.allMarkdownRemark.edges.map(({ node }) => (
-          <BlogPostCard post={node} key={node.id} ref={blogPostCardRef} />
+          <BlogPostCard post={node} key={node.id} />
         ))}
       </BlogPostList>
 
-      <LeftArrow onClick={previousPost} />
-      <RightArrow onClick={nextPost} />
+      <LeftArrow onClick={() => scroll(Direction.LEFT)} />
+      <RightArrow onClick={() => scroll(Direction.RIGHT)} />
 
       <SeeMoreButton to="/blog">See More</SeeMoreButton>
     </Container>
