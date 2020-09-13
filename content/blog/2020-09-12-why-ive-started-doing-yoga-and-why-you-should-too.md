@@ -4,21 +4,21 @@ date: 2020-09-12T14:44:56.441Z
 coverImage: ../../static/images/photo-1544367567-0f2fcb009e0b.jpeg
 coverImageAlt: Yoga in sunset
 ---
-If you'd asked me my opinion of yoga 3 years ago, I would most probably have told you that its a waste of time, not intense enough, too slow or I'd even have called it easy (sorry yogi's)! Crazy, I know. I just didn't want to swap an intense, sweaty session for what I saw as, a glorified stretching class. 
+If you had asked me my opinion of yoga 3 years ago, I would most probably have told you that its a waste of time, not intense enough, too slow or I'd even have called it easy (sorry yogi's)! Crazy, I know. I just didn't want to swap an intense, sweaty session for what I saw as, a glorified stretching class. 
 
 Don't worry though. I've seen sense now and I'm a huge yoga fan (still not quite sure if I qualify as a yogi though). 
 
-Those of you who know me know that I used to be a runner. As a runner, I had no real knowledge of stretching and so, as you can imagine, the more I trained, the tighter my muscles got. You can probably imagine where that got me. That's right: Injury. It started as a plantar fascia injury. Did I listen to my body and stop training? No, of course not. So I continued running on my injured foot, which caused other muscles to cry out for help. My calves were extremely tight (this liked to the foot injury), which caused shin splints.
+Those of you who know me know that I used to be a runner. As a runner, I had no real knowledge of stretching or yoga and so, as you can imagine, the more I trained, the tighter my muscles got. You can probably imagine where that got me. That's right: Injury. It started as a plantar fascia injury and went from there, to shin splints and pulled muscles and back to shin splints again. Did I listen to my body and stop training? No, of course not. I continued running on my injured foot, causing what seemed like endless injuries. 
 
-It was after about 3 rounds of shin splints that I decided to stop running. And, whilst I'm not saying that it could have been 100% preventable, stretching my muscles before and after running would have definitely helped in preventing injury and allowing full recovery. 
+It was after about 3 rounds of shin splints that I decided to stop running. And, whilst I'm not saying that it could have been 100% preventable, stretching my muscles before and after running would have definitely helped in preventing injury and allowing full recovery. It was muscle tightness that put a strain on my body and didn't allow for a full range of motion.
 
 ![](../../static/images/simon-migaj-yui5vfkhuzs-unsplash.jpg)
 
-From when I stopped running in 2017, to the beginning of lockdown, I never really trained my flexibility regularly. It was when I started doing weekly yoga where I saw steep improvements. From an increased range of motion to higher ability in my workouts and an overall more healthy feeling, if improvements were made in a couple of yoga sessions, just how beneficial could more yoga be, to me or others?
+From when I stopped running in 2017, to the beginning of lockdown, I never really trained my flexibility regularly. It was only when I started doing weekly yoga where I saw steep improvements. From an increased range of motion to higher ability in my workouts and an overall more healthy feeling in myself. If such improvements could be made in a couple of yoga sessions, just how beneficial could more yoga be, to me or others?
 
-What also shocked me was how hard yoga could be. I could do barely any of the poses (I would consider myself quite active) and got pretty tired and sweaty after half an hour. The first few classes could have been a comedy act. I'd lift my leg up for a 3-legged dog and fall flat on my face, or in a forward fold (bearing in mind you're meant to be aiming for the floor), I'd just about reach a 90-degree angle from my torso. 
+What also shocked me was how hard yoga could be. I could do barely any of the poses (I would consider myself quite active) and got pretty tired and sweaty after half an hour. This really shocked me. If you'd have watched the first few classes I did, you would have seen it could have been a comedy act. I'd lift my leg up for a 3-legged dog and fall flat on my face, or in a forward fold (bearing in mind you're meant to be aiming for the floor), I'd just about reach a 90-degree angle from my torso. Let's just say I'm not a natural yogi.
 
-Having been doing yoga for around 5-6 months now, I've seen so much improvement. I'm alright with most of the moves. It's still tiring, but worth it! Okay, yeah, fine, it would most definitely still be entertaining to watch, just now it's my failure at a standing split, crow pose or even a side crow pose (honestly if anyone has any tips for how to do this please let me know because from where I am it seems absolutely impossible). 
+Having been doing yoga for around 5-6 months now, I've seen so much improvement and most of the moves are manageable. It's still tiring, but worth it! Okay, yeah, fine, it would most definitely still be entertaining to watch, just now it's my failure at a standing split, crow pose or even a side crow pose (honestly if anyone has any tips for how to do this please let me know because from where I am it seems absolutely impossible). 
 
 Enough of me chatting, time to try and persuade you to start yoga.
 
@@ -46,7 +46,6 @@ So, the take-homes of today's post:
 * You (and I) need to do more yoga
 * Yoga is NOT EASY
 * There are so many benefits to yoga, its hard to find a reason not to do it.
-* Stretch more too!!!
 
 If you're interested in doing yoga, but don't know where to start, the app that I use is called DownDog. You can select all sorts of yoga styles, areas of your body to focus on, strength or flexibility, the amount of relaxation at the end, the music choice and the instructor. 
 
