@@ -20,7 +20,6 @@ const Container = styled.article`
     ". .        .";
   grid-template-rows: 64px auto 32px auto 24px auto 64px;
   grid-template-columns: 24px 1fr 24px;
-  max-width: var(--max-content-width);
 
   @media (min-width: 800px) {
     grid-template-areas:
