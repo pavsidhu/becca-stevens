@@ -188,7 +188,7 @@ export default function BlogPosts() {
       <LeftArrow onClick={() => scroll(Direction.LEFT)} />
       <RightArrow onClick={() => scroll(Direction.RIGHT)} />
 
-      <SeeMoreButton to="/blog">See More</SeeMoreButton>
+      <SeeMoreButton to="/blog">See More Posts</SeeMoreButton>
     </Container>
   )
 }

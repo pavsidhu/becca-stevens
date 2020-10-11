@@ -19,6 +19,11 @@ const Button = styled(Link)`
       color: var(--white);
     }
   }
+
+  &:focus {
+    background-color: var(--blue);
+    color: var(--white);
+  }
 `
 
 export default Button

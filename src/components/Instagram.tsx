@@ -48,7 +48,7 @@ const InstagramTitle = styled(Title)`
   font-size: 2.6rem;
 `
 
-const Handle = styled.h4`
+const Handle = styled.h3`
   grid-area: handle;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
