@@ -49,7 +49,7 @@ const Menu = styled(MenuIcon)`
   height: 32px;
   fill: var(--black);
   cursor: pointer;
-  
+
   @media (min-width: 800px) {
     display: none;
   }
@@ -185,7 +185,7 @@ export default function Header() {
       <Menu onClick={() => setMenuVisible(true)} />
 
       <Title>
-        <Link to="/">Maintain Fitness</Link>
+        <Link to="/">Becca Stevens</Link>
       </Title>
 
       <Nav isVisible={isMenuVisible}>
@@ -199,7 +199,7 @@ export default function Header() {
           Blog
         </NavItemLink>
         <Divider />
-        <NavItemA href="mailto:becca@traintomaintain.co.uk">Contact</NavItemA>
+        <NavItemA href="mailto:becca-stevens@hotmail.co.uk">Contact</NavItemA>
 
         <SocialIcon
           href="https://instagram.com/beccastevensfit"

@@ -2,10 +2,10 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Maintain Fitness`,
+    title: `Becca Stevens`,
     description: `Hey I'm Becca, I’m a vegan Personal Trainer from Surrey, UK. I have a passion for functional fitness, healthy food and being outdoors.`,
-    author: `Becca Stevens <becca@traintomaintain.co.uk>`,
-    siteUrl: `https://traintomaintain.co.uk`,
+    author: `Becca Stevens <becca-stevens@hotmail.co.uk>`,
+    siteUrl: `https://beccastevens.co.uk`,
   },
   plugins: [
     `gatsby-plugin-preact`,
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Maintain Fitness`,
-        short_name: `Maintain Fitness`,
+        name: `Becca Stevens`,
+        short_name: `Becca Stevens`,
         start_url: `/`,
         background_color: `#CA8080`,
         theme_color: `#CA8080`,

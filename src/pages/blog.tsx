@@ -6,7 +6,7 @@ import { SEO, Title, BlogPostCard } from "../components"
 
 const Container = styled.article`
   display: grid;
-  justify-items: center;
+  justify-self: center;
   grid-template-areas:
     ". .     ."
     ". title ."

@@ -8,4 +8,4 @@
 
 ## License
 
-GPL-3.0 © [Maintain Fitness](https://traintomaintain.co.uk)
+GPL-3.0 © [Maintain Fitness](https://beccastevens.co.uk)

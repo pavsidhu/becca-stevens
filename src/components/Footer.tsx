@@ -46,7 +46,7 @@ const Instagram = styled(InstagramIcon)`
 export default function Footer() {
   return (
     <Container>
-      <Copyright>© {new Date().getFullYear()} Maintain Fitness</Copyright>
+      <Copyright>© {new Date().getFullYear()} Becca Stevens</Copyright>
 
       <SocialIcon
         href="https://instagram.com/beccastevensfit"
